@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 // import ioni from '../../assets/icons/email.png'
 import './footer.css'
 import FooterNav from '../MobileNav/footerNav';
-import logo from '../../assets/images/logos/white-logo.svg';
+import logo from '../../assets/images/logos/footer-logo.svg';
 
 
 const Footer = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
         <div className='footer'>
             <div className='content'>
                 <div className='first'>
-                    <h3>__ About Us</h3>
+                    <h5>__ About Us</h5>
                     <p>Nile Safari Lodge is a family project that aspires to offer the most environmental friendly eco-lodge in Uganda while providing our guests with outstanding hospitality and adventures.</p>
                     {/* <div className='icons'>
                         <img src={you} className='footer__icon' alt='youtube' />
@@ -28,31 +28,25 @@ const Footer = () => {
                     </div> */}
                 </div>
                 <div className='second'>
-                    <h3>__ Quick Links</h3>
+                    <h5>__ Features</h5>
                     <FooterNav>
-                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}>Home</Link>
-                        <Link to="/activities" onClick={()=>window.scrollTo(0, 0)}>Activities</Link>
-                        <Link to="/accommodate" onClick={()=>window.scrollTo(0, 0)}>Accommodation</Link>
-                        <Link to="/facilities" onClick={()=>window.scrollTo(0, 0)}>Facilities</Link>
-                        <Link to="/gallery" onClick={()=>window.scrollTo(0, 0)}>Gallery</Link>
-                        <Link to="/about" onClick={()=>window.scrollTo(0, 0)}>About</Link>
-                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}><img className="logo" src={logo} alt="logo" /></Link>
+                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}>User Management</Link>
+                        <Link to="/activities" onClick={()=>window.scrollTo(0, 0)}>Courses</Link>
+                        <Link to="/accommodate" onClick={()=>window.scrollTo(0, 0)}>Subjects</Link>
+                        <Link to="/facilities" onClick={()=>window.scrollTo(0, 0)}>Product design</Link>
                     </FooterNav>
                 </div>
                 <div className='second'>
-                    <h3>__ Quick Links</h3>
+                    <h5>__ Company</h5>
                     <FooterNav>
-                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}>Home</Link>
-                        <Link to="/activities" onClick={()=>window.scrollTo(0, 0)}>Activities</Link>
-                        <Link to="/accommodate" onClick={()=>window.scrollTo(0, 0)}>Accommodation</Link>
-                        <Link to="/facilities" onClick={()=>window.scrollTo(0, 0)}>Facilities</Link>
-                        <Link to="/gallery" onClick={()=>window.scrollTo(0, 0)}>Gallery</Link>
-                        <Link to="/about" onClick={()=>window.scrollTo(0, 0)}>About</Link>
-                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}><img className="logo" src={logo} alt="logo" /></Link>
+                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}>Partners</Link>
+                        <Link to="/activities" onClick={()=>window.scrollTo(0, 0)}>Press</Link>
+                        <Link to="/accommodate" onClick={()=>window.scrollTo(0, 0)}>Tutors</Link>
+                        <Link to="/facilities" onClick={()=>window.scrollTo(0, 0)}>Customers</Link>
                     </FooterNav>
                 </div>
                 <div className='second'>
-                    <h3>__ Quick Links</h3>
+                    <h5>__ Support</h5>
                     <FooterNav>
                         <Link to="/" onClick={()=>window.scrollTo(0, 0)}>Home</Link>
                         <Link to="/activities" onClick={()=>window.scrollTo(0, 0)}>Activities</Link>
@@ -64,7 +58,7 @@ const Footer = () => {
                     </FooterNav>
                 </div>
                 <div className='third'>
-                    <h3>__ Members of:</h3>
+                    <h5>__ Follow us:</h5>
                     {/* <div className='icons'>
                         <img src={associate} className='footer__image' alt='youtube' />
                         <img src={asso} className='footer__image' alt='instagram' />
@@ -80,7 +74,15 @@ const Footer = () => {
                 </div>
             </div>
             <div className='copyright'>
-                <p>@2020 Nile Safari Lodge. All rights reserved <br />Designed by dagartstudios.</p>
+                <div className="logo-side">
+                    <img src={logo} className='logo__image' alt='logo' />
+                    <p>@ 2020 Soma1on1. All Rights Reserved. by DagartStudios.</p>
+                </div>
+
+                <div className="link-side">
+                    <p>Privacy Policy</p>
+                    <p>Cookies</p>
+                </div>
             </div>
         </div>
     )

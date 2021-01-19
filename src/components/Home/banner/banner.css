@@ -57,7 +57,6 @@
 }
 
 .banner .leftsider .content h1 {
-  font-size: 50px;
   margin: 0 auto 47px;
 }
 
@@ -79,7 +78,8 @@
   border: 2px solid #E23744;
   height: 55px;
   width: 170px;
-  transition: all 0.3s ease 0.3s;
+  /* transition: 0.3s; */
+  transition: 0.3s;
   border-radius: 5px;
   outline: none;
 }
@@ -96,7 +96,8 @@
 
 .banner .leftsider .content .btn-section .btn:hover {
   background: #E23744;
-  transition: all 0.3s ease 0.3s;
+  /* transition: 0.3s; */
+  transition: 0.3s;
   color: #ffffff;
 }
 

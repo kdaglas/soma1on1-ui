@@ -14,7 +14,7 @@
 .tablets {
   /* display: flex; */
   height: 270px;
-  width: 67%;
+  width: 70%;
   /* color: #fff; */
   /* height: 100vh; */
   /* align-items: center;
@@ -29,7 +29,7 @@
   /* box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.07), -5px -3px 10px rgba(0, 0, 0, 0.07);
   border-radius: 5px; */
 
-  margin: 200px auto;
+  margin: 150px auto;
 }
 
 .card .nilesafarivideo {
@@ -82,7 +82,7 @@
   text-transform: uppercase;
   height: 55px;
   width: 170px;
-  transition: all 0.3s ease 0.3s;
+  transition: 0.3s;
   border-radius: 5px;
   /* outline: none; */
 
@@ -102,7 +102,7 @@
 
 /* .card .btn:hover {
   background: #E23744;
-  transition: all 0.3s ease 0.3s;
+  transition: 0.3s;
   color: #ffffff;
 } */
 

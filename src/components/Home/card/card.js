@@ -1,9 +1,9 @@
 import React from 'react';
 import rightsider from '../../../assets/images/kid-class.svg'
-import './cards.css'
+import './card.css'
 
 
-const Cards = () => {
+const Card = () => {
 
     return (
         <div className='card'>
@@ -11,10 +11,10 @@ const Cards = () => {
                 <img className='videobg' src={rightsider} alt="" />
 
                 <div className="content">
-                    <h1>
+                    <h3>
                         Here at Soma1on1, the<br />
                         universe is your talent.
-                    </h1>
+                    </h3>
 
                     <p>
                         We have atmost talent everywhere<br />
@@ -29,4 +29,4 @@ const Cards = () => {
     )
 }
 
-export default Cards;
+export default Card;

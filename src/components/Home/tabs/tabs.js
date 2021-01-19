@@ -44,18 +44,19 @@ class Tabs extends React.Component {
                         tutors more easily than ever before.
                     </p>
                 </div>
-                <div className="tab">
+
+                {/* <div className="tab">
                     <button className="tablinks" onClick={this.openCity('London')} id="defaultOpen">London</button>
                     <button className="tablinks" onClick={this.openCity('Paris')}>Paris</button>
                     <button className="tablinks" onClick={this.openCity('Tokyo')}>Tokyo</button>
-                </div>
+                </div> */}
 
-                <div id="London" className="tabcontent">
+                {/* <div id="London" className="tabcontent">
                     <h3>London</h3>
                     <p>London is the capital city of England.</p>
-                </div>
+                </div> */}
 
-                <div id="Paris" className="tabcontent">
+                {/* <div id="Paris" className="tabcontent">
                     <h3>Paris</h3>
                     <p>Paris is the capital of France.</p>
                 </div>
@@ -65,7 +66,7 @@ class Tabs extends React.Component {
                     <p>Tokyo is the capital of Japan.</p>
                 </div>
 
-                <script></script>
+                <script></script> */}
             </div>
         )
     }

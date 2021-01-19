@@ -76,6 +76,8 @@ class Header extends React.Component {
                     </nav>
 
                     <div className="auth-section">
+                        {/* <Link to="/">login</Link> */}
+
                         <button className='btn'>start now</button>
 
                         <div className='menu' onClick={this.openNavBar}>

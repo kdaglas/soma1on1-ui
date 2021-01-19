@@ -89,7 +89,7 @@
   background: #E23744;
   color: #fff;
   width: 170px;
-  transition: all 0.3s ease 0.3s;
+  transition: 0.3s;
   border-radius: 5px;
   /* outline: none; */
 }
@@ -99,7 +99,7 @@
 }
 
 .header .nav .btn:hover {
-  color: #E23744;
+  /* color: #E23744; */
   /* Ann ID 5-4363000030638 */
   /* Rob Case ID: 5-4363000030638 */
   /* 0704775747 */
