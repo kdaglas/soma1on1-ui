@@ -1,0 +1,192 @@
+/* .banner,
+.banner .nilesafarivideo,
+.banner .nilesafarivideo .background,
+.banner .nilesafarivideo .videobg {
+  width: 100%;
+} */
+
+.card .nilesafarivideo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tablets {
+  /* display: flex; */
+  height: 270px;
+  width: 67%;
+  /* color: #fff; */
+  /* height: 100vh; */
+  /* align-items: center;
+  justify-content: center; */
+
+  /* position: relative;
+
+  margin: -50px auto 0;
+  z-index: 1; */
+
+  /* background: #E23744; */
+  /* box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.07), -5px -3px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 5px; */
+
+  margin: 200px auto;
+}
+
+.card .nilesafarivideo {
+  /* position: relative;
+  height: 100%;
+  background-attachment: scroll;
+  overflow: hidden; */
+
+  margin-left: 55px;
+  /* border: 1px solid blue; */
+}
+
+.card .nilesafarivideo .videobg {
+  /* object-fit: cover;
+  overflow: hidden;
+  pointer-events: none; */
+
+}
+
+.tablets .content {
+  /* position: absolute;
+  margin-left: 290px;
+  left: 0; */
+  text-align: center;
+  /* border: 1px solid blue; */
+  margin: 0 auto 45px;
+}
+
+.tablets .content h1 {
+  font-size: 30px;
+  margin-bottom: 27px;
+  font-family: Montserrat-Bold;
+}
+
+.tablets .content p {
+  font-size: 17px;
+  color: #A2A3B3;
+}
+
+.banner .content .btn-section {
+  margin: 0 auto;
+}
+
+.card .btn {
+  /* margin: 47px 15px 0; */
+  outline: none;
+  font-family: Montserrat-Bold;
+  margin-right: 55px;
+  font-size: 17px;
+  text-transform: uppercase;
+  height: 55px;
+  width: 170px;
+  transition: all 0.3s ease 0.3s;
+  border-radius: 5px;
+  /* outline: none; */
+
+  /* border: 1px solid blue; */
+}
+
+.card .btn-bg-1 {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* .card .btn-bg-2 {
+  background: transparent;
+  color: #E23744;
+} */
+
+/* .card .btn:hover {
+  background: #E23744;
+  transition: all 0.3s ease 0.3s;
+  color: #ffffff;
+} */
+
+
+
+
+
+
+
+
+/* * {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;} */
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner .content {
+    margin-top: 35px;
+    width: 300px;
+  }
+
+  .banner .content h1 {
+    font-size: 45px;
+  }
+
+  .banner .content hr {
+    width: 170px;
+    margin: 25px 0;
+  }
+
+  .banner .content p {
+    font-size: 15px;
+  }
+
+  .banner .content .btn {
+    font-size: 15px;
+  }
+}
