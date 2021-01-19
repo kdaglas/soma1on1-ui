@@ -30,31 +30,28 @@ const Footer = () => {
                 <div className='second'>
                     <h5>__ Features</h5>
                     <FooterNav>
-                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}>User Management</Link>
-                        <Link to="/activities" onClick={()=>window.scrollTo(0, 0)}>Courses</Link>
-                        <Link to="/accommodate" onClick={()=>window.scrollTo(0, 0)}>Subjects</Link>
-                        <Link to="/facilities" onClick={()=>window.scrollTo(0, 0)}>Product design</Link>
+                        <Link to="/" onClick={() => window.scrollTo(0, 0)}>User Management</Link>
+                        <Link to="/activities" onClick={() => window.scrollTo(0, 0)}>Courses</Link>
+                        <Link to="/accommodate" onClick={() => window.scrollTo(0, 0)}>Subjects</Link>
+                        <Link to="/facilities" onClick={() => window.scrollTo(0, 0)}>Product Design</Link>
                     </FooterNav>
                 </div>
                 <div className='second'>
                     <h5>__ Company</h5>
                     <FooterNav>
-                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}>Partners</Link>
-                        <Link to="/activities" onClick={()=>window.scrollTo(0, 0)}>Press</Link>
-                        <Link to="/accommodate" onClick={()=>window.scrollTo(0, 0)}>Tutors</Link>
-                        <Link to="/facilities" onClick={()=>window.scrollTo(0, 0)}>Customers</Link>
+                        <Link to="/" onClick={() => window.scrollTo(0, 0)}>Partners</Link>
+                        <Link to="/activities" onClick={() => window.scrollTo(0, 0)}>Press</Link>
+                        <Link to="/accommodate" onClick={() => window.scrollTo(0, 0)}>Tutors</Link>
+                        <Link to="/facilities" onClick={() => window.scrollTo(0, 0)}>Customers</Link>
                     </FooterNav>
                 </div>
                 <div className='second'>
                     <h5>__ Support</h5>
                     <FooterNav>
-                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}>Home</Link>
-                        <Link to="/activities" onClick={()=>window.scrollTo(0, 0)}>Activities</Link>
-                        <Link to="/accommodate" onClick={()=>window.scrollTo(0, 0)}>Accommodation</Link>
-                        <Link to="/facilities" onClick={()=>window.scrollTo(0, 0)}>Facilities</Link>
-                        <Link to="/gallery" onClick={()=>window.scrollTo(0, 0)}>Gallery</Link>
-                        <Link to="/about" onClick={()=>window.scrollTo(0, 0)}>About</Link>
-                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}><img className="logo" src={logo} alt="logo" /></Link>
+                        <Link to="/" onClick={() => window.scrollTo(0, 0)}>Help and Support</Link>
+                        <Link to="/activities" onClick={() => window.scrollTo(0, 0)}>Availability</Link>
+                        <Link to="/accommodate" onClick={() => window.scrollTo(0, 0)}>Special Services</Link>
+                        <Link to="/facilities" onClick={() => window.scrollTo(0, 0)}>Facilities</Link>
                     </FooterNav>
                 </div>
                 <div className='third'>
