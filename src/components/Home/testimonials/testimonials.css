@@ -1,0 +1,79 @@
+.testimonial,
+.testimonial .testimonies,
+.testimonial .testimonies .inside,
+.profile-section {
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+.testimonial {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.testimonial .testimonies {
+  width: 72%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial .testimonies hr {
+  width: 100px;
+  border: 1px solid #d5af6d;
+  margin: 35px 0;
+}
+
+.testimonial .testimonies .inside {
+  justify-content: space-between;
+}
+
+.testimonial .testimonies .inside .first,
+.testimonial .testimonies .inside .second,
+.testimonial .testimonies .inside .third {
+  padding: 50px 40px;
+  width: 31%;
+  text-align: start;
+}
+
+.testimonial .testimonies .inside .first .profile,
+.testimonial .testimonies .inside .second .profile,
+.testimonial .testimonies .inside .third .profile {
+  border-radius: 200px;
+  width: 80px;
+}
+
+.profile-section {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.profile-section .name {
+  font-family: Caviar Dreams Bold;
+  font-weight: bolder;
+}
+
+@media (min-width: 320px) and (max-width: 855px) {
+  .testimonial .testimonies {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .testimonial .testimonies .inside {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .testimonial .testimonies .inside .first,
+  .testimonial .testimonies .inside .second,
+  .testimonial .testimonies .inside .third {
+    padding: 30px 20px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: start;
+  }
+}

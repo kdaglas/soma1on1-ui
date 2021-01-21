@@ -1,8 +1,8 @@
-# soma1on1-ui
+# soma1on1 ReactJS UI
 
-An online school management system...
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c5e85fd-341e-428b-b7b0-cb55baf1e810/deploy-status)](https://app.netlify.com/sites/soma1on1/deploys)
 
-## Getting Started with Create React App
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,0 +1,150 @@
+.banner {
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.banner .nilesafarivideo {
+  /* position: relative; */
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  /* height: 100%; */
+  /* background-attachment: scroll;
+  overflow: hidden; */
+  width: 50%;
+  /* border: 1px solid red; */
+}
+
+.banner .nilesafarivideo .videobg {
+  /* background-size: cover; */
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid blue; */
+  object-fit: cover;
+  /* border: 1px solid blue; */
+  /* overflow: hidden; */
+  /* margin-right: -200px; */
+  /* pointer-events: none; */
+}
+
+.banner .leftsider {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.banner .leftsider .content {
+  /* position: absolute; */
+  margin-right: 70px;
+  /* height: 100%; */
+  /* width: 100%; */
+  /* left: 0;
+  right: 100; */
+  text-align: center;
+  /* margin: auto 0; */
+  width: 57%;
+  /* border: 1px solid red; */
+  /* float: right; */
+}
+
+.banner .leftsider .content h1 {
+  margin: 0 auto 47px;
+}
+
+.banner .leftsider .content p {
+  color: #A2A3B3;
+  font-size: 20px;
+}
+
+.banner .leftsider .content .btn-section {
+  margin: 47px auto 0;
+}
+
+.banner .leftsider .content .btn-section .btn {
+  margin: 0 15px 0;
+  outline: none;
+  font-family: Montserrat-Bold;
+  font-size: 17px;
+  text-transform: uppercase;
+  border: 2px solid #E23744;
+  height: 55px;
+  width: 170px;
+  /* transition: 0.3s; */
+  transition: 0.3s;
+  border-radius: 5px;
+  outline: none;
+}
+
+.banner .leftsider .content .btn-section .btn-bg-1 {
+  background: #E23744;
+  color: #fff;
+}
+
+.banner .leftsider .content .btn-section .btn-bg-2 {
+  background: transparent;
+  color: #E23744;
+}
+
+.banner .leftsider .content .btn-section .btn:hover {
+  background: #E23744;
+  /* transition: 0.3s; */
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner .nilesafarivideo {
+    display: none;
+  }
+  
+  .banner .leftsider {
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: end; */
+    /* align-items: center; */
+  }
+
+  .banner .leftsider .content {
+    /* position: absolute; */
+    margin: auto;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* left: 0;
+    right: 100; */
+    /* text-align: center; */
+    /* margin: auto 0; */
+    width: 85%;
+    /* border: 1px solid red; */
+    /* float: right; */
+  }
+
+  .banner .leftsider .content h1 {
+    font-size: 37px;
+    margin: 0 auto 35px;
+  }
+  
+  .banner .leftsider .content p {
+    font-size: 17px;
+  }
+  
+  .banner .leftsider .content .btn-section {
+    margin: 35px auto 0;
+  }
+
+  .banner .leftsider .content .btn-section .btn {
+    height: 50px;
+  }
+
+  .banner .leftsider .content .btn-section .btn-bg-2 {
+    margin: 17px 0 0;
+  }
+}
