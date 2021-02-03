@@ -1,0 +1,85 @@
+.card {
+  margin-bottom: $grid-gutter-width;
+  // box-shadow: $card-shadow;
+  box-shadow: -5px -3px 10px rgba(0, 0, 0, 0.07), 5px 3px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  
+}
+
+.yellow {
+  background-color: #F2C94C;
+  color: #fff !important;
+}
+
+.pink {
+  background-color: #E23744;
+  color: #fff !important;
+}
+
+.blue {
+  background-color: #51ABD3;
+  color: #fff !important;
+}
+
+.card-header {
+  border-bottom-width: 1px;
+}
+
+.card-actions {
+  a {
+    color: $body-color;
+    text-decoration: none;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .dropdown {
+    line-height: 1.4;
+  }
+}
+
+.card-title {
+  font-size: $font-size-base;
+  font-weight: $card-title-font-weight;
+  color: #000;
+}
+
+.c-t {
+  color: #fff;
+}
+
+.card-value {
+  font-weight: bold;
+  color: #fff;
+}
+
+.card-subtitle {
+  font-weight: $font-weight-normal;
+}
+
+.card-table {
+  margin-bottom: 0;
+}
+
+.card-table tr td:first-child,
+.card-table tr th:first-child {
+  padding-left: $card-spacer-x;
+}
+
+.card-table tr td:last-child,
+.card-table tr th:last-child {
+  padding-right: $card-spacer-x;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  @include img-fluid;
+
+  @media all and (-ms-high-contrast:none) {
+    height: 100%;
+  }
+}
