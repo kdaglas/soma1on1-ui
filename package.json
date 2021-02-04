@@ -1,13 +1,13 @@
 {
-  "name": "adminkit",
+  "name": "Soma1on1",
   "version": "2.1.0",
-  "description": "AdminKit - Bootstrap 5 Admin Template",
+  "description": "Soma1on1 - Bootstrap 5 Admin Template",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.js",
     "watch": "webpack -p --config webpack.config.js --watch",
     "start": "webpack-dev-server --config webpack.config.js"
   },
-  "author": "Paul Laros <support@adminkit.io>",
+  "author": "Paul Laros <support@Soma1on1.io>",
   "private": true,
   "browserslist": [
     "> 0.25%",

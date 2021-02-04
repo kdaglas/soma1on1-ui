@@ -115,7 +115,9 @@ $social-colors: (
 ) !default;
 
 // Body
-$body-bg: #F7F7FC !default;
+// $body-bg: #F7F7FC !default;
+$body-bg: #FFF !default;
+// $body-color: #000 !default;
 $body-color: $gray-700 !default;
 
 // Links
