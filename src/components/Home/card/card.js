@@ -6,8 +6,8 @@ import './card.css'
 const Card = () => {
 
     return (
-        <div className='card'>
-            <div className='card-content'>
+        <div className='cardio'>
+            <div className='cardio-content'>
                 <img className='videobg' src={rightsider} alt="" />
 
                 <div className="content">
@@ -23,7 +23,7 @@ const Card = () => {
                     </p>
                 </div>
 
-                <button className='btn btn-bg-1'>about us</button>
+                <button className='btn btn-no-bg-white'>about us</button>
             </div>
         </div>
     )

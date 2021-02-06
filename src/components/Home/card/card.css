@@ -1,7 +1,7 @@
-.card {
-  padding: 70px 120px;
+.cardio {
+  padding: 30px 120px;
   width: 67%;
-  color: #fff;
+  color: #fff !important;
   position: relative;
   margin: -50px auto 0;
   z-index: 1;
@@ -10,71 +10,72 @@
   border-radius: 5px;
 }
 
-.card .card-content {
+.cardio .cardio-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0;
 }
 
-.card .card-content .videobg {
+.cardio .cardio-content .videobg {
   margin: 0;
 }
 
-.card .card-content .content {
+.cardio .cardio-content .content {
   text-align: center;
 }
 
-.card .card-content .content h3 {
+.cardio .cardio-content .content h3 {
   /* font-size: 27px; */
+  color: #fff !important;
   margin-bottom: 25px;
   /* font-family: Montserrat-Bold; */
 }
 
-.card .card-content .content p {
+.cardio .cardio-content .content p {
   /* font-size: 17px; */
 }
 
-.card .card-content .btn {
-  margin: 0;
-  outline: none;
-  font-family: Montserrat-Bold;
-  font-size: 17px;
-  text-transform: uppercase;
-  height: 55px;
-  width: 170px;
-  transition: 0.3s;
-  border-radius: 5px;
+.cardio .cardio-content .btn {
+  /* margin: 0; */
+  /* outline: none; */
+  /* font-family: Montserrat-Bold; */
+  /* font-size: 17px;
+  text-transform: uppercase; */
+  /* height: 55px;
+  width: 170px; */
+  /* transition: 0.3s;
+  border-radius: 5px; */
 }
 
-.card .card-content .btn-bg-1 {
-  background: transparent;
-  color: #fff;
-  border: 2px solid #fff;
+.cardio .cardio-content .btn-bg-1 {
+  /* background: transparent;
+  color: #fff; */
+  border: 2px solid #E23744 !important;
 }
 
-.card .card-content .btn:hover {
+/* .cardio .cardio-content .btn-bg-1:hover {
   background: #fff;
   transition: 0.3s;
   color: #E23744;
-}
+} */
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .card {
+  .cardio {
     padding: 70px 37px;
     width: 80%;
     margin: 0 auto;
   }
   
-  .card .card-content {
+  .cardio .cardio-content {
     flex-direction: column;
   }
 
-  .card .card-content .videobg {
+  .cardio .cardio-content .videobg {
     margin: 0 0 50px;
   }
 
-  .card .card-content .btn {
+  .cardio .cardio-content .btn {
     margin: 50px 0 0;
   }
   

@@ -15,13 +15,16 @@
   background-color: rgb(15, 15, 15);
   flex-direction: column;
   color: #fff;
+  /* padding: 0; */
 }
 
 .footer .content {
   /* flex-direction: row; */
   justify-content: space-between;
   width: 75%;
-  margin: 170px auto 57px;
+  margin: 150px auto 37px;
+  /* border: 1px solid red; */
+  padding: 0 !important;
 }
 
 .footer .content .first,
@@ -29,6 +32,13 @@
 .footer .content .third {
   flex-direction: column;
   width: 30%;
+}
+
+.footer .content .first h5,
+.footer .content .second h5,
+.footer .content .third h5 {
+  margin-bottom: 27px !important;
+  color: #E23744 !important;
 }
 
 .footer .content .second {

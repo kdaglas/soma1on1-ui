@@ -67,7 +67,7 @@ class Header extends React.Component {
 
                     <nav>
                         <ul className="nav__links">
-                            <li><a href="home.html">Home</a></li>
+                            <li><a href="/dashboard">Home</a></li>
                             <li><a href="courses.html">Courses</a></li>
                             <li><a href="platform.html">Platform</a></li>
                             <li><a href="pricing.html">Pricing</a></li>
@@ -78,7 +78,7 @@ class Header extends React.Component {
                     <div className="auth-section">
                         {/* <Link to="/">login</Link> */}
 
-                        <button className='btn'>start now</button>
+                        <button className='btn btn-bg auth-btn'>start now</button>
 
                         <div className='menu' onClick={this.openNavBar}>
                             <div className='bar half start'></div>

@@ -10,6 +10,7 @@ const Banner = () => {
 
             <div className="leftsider">
                 <div className="content">
+                <div className="more-content">
                     <h1>
                         Online coaching,
                         with a twist, every
@@ -23,9 +24,10 @@ const Banner = () => {
                     </p>
 
                     <div className="btn-section">
-                        <button className='btn btn-bg-1'>pricing</button>
-                        <button className='btn btn-bg-2'>start now</button>
+                        <button className='btn btn-bg'>pricing</button>
+                        <a href="/login"><button className='btn btn-no-bg'>start now</button></a>
                     </div>
+                </div>
                 </div>
             </div>
 

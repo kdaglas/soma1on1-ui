@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import TutorDashboard from '../components/Dashboard/tutordashboard';
+import TutorDashboardView from '../pages/Dashboard/tutordashview';
 // import AboutView from '../containers/About/aboutview';
 // import GalleryView from '../containers/Gallery/galleryview';
 
@@ -12,6 +14,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import ActivitiesView from '../containers/Activities/activitiesview';
 // import AccommodationView from '../containers/Accommodation/accommodationview';
 import HomeView from '../pages/Home/homeview';
+import LoginView from '../pages/Auth/loginview';
 // import Notfoundpage from '../shared/Not';
 // import Footer from '../shared/footer/Footer';
 
@@ -19,6 +22,8 @@ const Routes = () => (
     <Router>
         <Switch>
             <Route path="/" exact component={ HomeView } />
+            <Route path="/dashboard" exact component={ TutorDashboardView } />
+            <Route path="/login" exact component={ LoginView } />
             {/* <Route path="/about" exact component={ AboutView } />
             <Route path="/accommodate" exact component={ AccommodationView } />
             <Route path="/gallery" exact component={ GalleryView } />

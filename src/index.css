@@ -32,6 +32,14 @@
   src: url('./assets/fonts/Montserrat/Montserrat-Black.ttf');
 }
 
+@font-face {
+  font-family:Font Awesome\ 5 Free;
+  font-style:normal;
+  font-weight:400;
+  font-display:block;
+  src:url(./assets/fonts/bootfonts/fa-regular-400.eot);
+  src:url(./assets/fonts/bootfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(./assets/fonts/bootfonts/fa-regular-400.woff2) format("woff2"),url(./assets/fonts/bootfonts/fa-regular-400.woff) format("woff"),url(./assets/fonts/bootfonts/fa-regular-400.ttf) format("truetype"),url(./assets/fonts/bootfonts/fa-regular-400.svg#fontawesome) format("svg")}.far{font-weight:400}
+
 *,
 html,
 body {
@@ -43,27 +51,119 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-color: #fff !important;
+}
+
 h1 {
   font-family: Montserrat-ExtraBold;
   font-size: 50px;
 }
 
 h2 {
-  font-family: Montserrat-Bold;
-  font-size: 32px;
+  font-family: Montserrat-Bold !important;
+  font-size: 32px !important;
 }
 
 h3 {
-  font-family: Montserrat-SemiBold;
-  font-size: 27px;
+  font-family: Montserrat-SemiBold !important;
+  font-size: 27px !important;
 }
 
 h5 {
-  font-family: Montserrat-Bold;
-  font-size: 19px;
-  margin-bottom: 27px;
-  color: #E23744;
+  font-family: Montserrat-Bold !important;
+  font-size: 17px !important;
 }
+
+.btn {
+  outline: none;
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-radius: 5px !important;
+  height: 55px;
+  width: 170px;
+  margin: 0;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.btn-bg {
+  background-color: #E23744 !important;
+  color: #fff !important;
+  border: 2px solid #E23744 !important;
+}
+
+.btn-bg:hover {
+  background-color: transparent !important;
+  color: #E23744 !important;
+  transition: 0.3s;
+  border: 2px solid #E23744 !important;
+}
+
+.btn-no-bg {
+  background-color: transparent;
+  color: #E23744 !important;
+  border: 2px solid #E23744 !important;
+}
+
+.btn-no-bg:hover {
+  background-color: #E23744;
+  transition: 0.3s;
+  color: #fff !important;
+}
+
+.btn-no-bg-white {
+  background-color: transparent;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+.btn-no-bg-white:hover {
+  background-color: #fff;
+  color: #E23744 !important;
+  border: 2px solid #fff !important;
+}
+
+/* .btn-bg-1 {
+  background: transparent !important;
+  color: #E23744 !important;
+  transition: 0.3s;
+  border: 2px solid #fff !important;
+}
+
+.btn-bg-2 {
+  background: #E23744 !important;
+  color: #fff !important;
+  transition: 0.3s;
+  border: 2px solid #E23744 !important;
+}
+
+.btn-bg-1:hover {
+  background: #E23744 !important;
+  transition: 0.3s;
+  color: #fff !important;
+} */
+
+
+
+/* .btn-bg-3:hover {
+  background: #fff !important;
+  color: #E23744 !important;
+  transition: 0.3s;
+  border: 2px solid #E23744 !important;
+} */
+
+/* .btn-bg-4:hover {
+  background: #c8323f !important;
+  color: #fff !important;
+  transition: 0.3s;
+  border: 2px solid #c8323f !important;
+} */
+
+
 
 /* h1, h2, h3, h4, h5 { */
   /* margin: 0;
@@ -85,7 +185,7 @@ p,
 span {
   /* margin: 0;
   padding: 0; */
-  font-size: 17px;
+  font-size: 15px;
   /* line-height: 1.37; */
   /* font-weight: bold; */
 }

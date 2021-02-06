@@ -19,7 +19,7 @@ const Footer = () => {
             <div className='content'>
                 <div className='first'>
                     <h5>__ About Us</h5>
-                    <p>Nile Safari Lodge is a family project that aspires to offer the most environmental friendly eco-lodge in Uganda while providing our guests with outstanding hospitality and adventures.</p>
+                    <p>Soma1on1 is a project that aspires to offer the most friendly education while at home in Uganda while providing our tutors and students with outstanding services.</p>
                     {/* <div className='icons'>
                         <img src={you} className='footer__icon' alt='youtube' />
                         <img src={insta} className='footer__icon' alt='instagram' />
@@ -61,7 +61,7 @@ const Footer = () => {
                         <img src={asso} className='footer__image' alt='instagram' />
                         <img src={face} className='footer__image' alt='facebook' />
                     </div> */}
-                    <p>Nile Safari Lodge requires your feedback so help us by signing up for the newsletter</p>
+                    <p>Soma1on1 requires your feedback so help us by signing up for the newsletter</p>
                     <form action="/action_page.php">
                         <div className="input-container">
                             {/* <img src={ioni} alt='email' className="icon"></img> */}
