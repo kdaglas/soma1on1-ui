@@ -70,10 +70,10 @@ class Header extends React.Component {
             <nav>
               <ul className="nav__links">
                 <li><a href="/">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="platform.html">Platform</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="/notfound">Courses</a></li>
+                <li><a href="/notfound">Platform</a></li>
+                <li><a href="/notfound">Pricing</a></li>
+                <li><a href="/notfound">About</a></li>
               </ul>
             </nav>
 

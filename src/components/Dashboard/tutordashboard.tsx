@@ -3,7 +3,7 @@ import React from 'react';
 import logo from '../../assets/img/normal-logo.svg';
 
 import crown from '../../assets/img/crown.svg';
-import dash from '../../assets/img/dash.svg';
+// import dash from '../../assets/img/dash.svg';
 import handshake from '../../assets/img/hand-shake.svg';
 import mic from '../../assets/img/mic.svg';
 
@@ -39,8 +39,8 @@ const TutorDashboard = () => (
 
     <nav id="sidebar" className="sidebar">
       <div className="sidebar-content js-simplebar">
-        <a className="sidebar-brand" href="index.html">
-          <span className="align-middle"><img src={logo} /></span>
+        <a className="sidebar-brand" href="/notfound">
+          <span className="align-middle"><img src={logo} alt="" /></span>
         </a>
 
         <ul className="sidebar-nav">
@@ -49,7 +49,7 @@ const TutorDashboard = () => (
           </li>
 
           <li className="sidebar-item active">
-            <a className="sidebar-link" href="index.html">
+            <a className="sidebar-link" href="/notfound">
               <i className="align-middle" data-feather="sliders" />
               {' '}
               <span
@@ -71,17 +71,17 @@ const TutorDashboard = () => (
               </span>
             </a>
             <ul id="ui" className="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-              <li className="sidebar-item"><a className="sidebar-link" href="#">Teaching</a></li>
+              <li className="sidebar-item"><a className="sidebar-link" href="/notfound">Teaching</a></li>
               <li className="sidebar-item">
-                <a className="sidebar-link" href="#">Collaborating</a>
+                <a className="sidebar-link" href="/notfound">Collaborating</a>
               </li>
-              <li className="sidebar-item"><a className="sidebar-link" href="#">Partaking</a></li>
+              <li className="sidebar-item"><a className="sidebar-link" href="/notfound">Partaking</a></li>
 
             </ul>
           </li>
 
           <li className="sidebar-item">
-            <a className="sidebar-link" href="#">
+            <a className="sidebar-link" href="/notfound">
               <i className="align-middle" data-feather="coffee" />
               {' '}
               <span className="align-middle">Students</span>
@@ -100,10 +100,10 @@ const TutorDashboard = () => (
             </a>
             <ul id="forms" className="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
               <li className="sidebar-item">
-                <a className="sidebar-link" href="#">Results</a>
+                <a className="sidebar-link" href="/notfound">Results</a>
               </li>
               <li className="sidebar-item">
-                <a className="sidebar-link" href="#">Statistics</a>
+                <a className="sidebar-link" href="/notfound">Statistics</a>
               </li>
             </ul>
           </li>
@@ -113,7 +113,7 @@ const TutorDashboard = () => (
           </li>
 
           <li className="sidebar-item">
-            <a className="sidebar-link" href="#">
+            <a className="sidebar-link" href="/notfound">
               <i className="align-middle" data-feather="user" />
               {' '}
               <span className="align-middle">Profile</span>
@@ -121,7 +121,7 @@ const TutorDashboard = () => (
           </li>
 
           <li className="sidebar-item">
-            <a className="sidebar-link" href="#">
+            <a className="sidebar-link" href="/notfound">
               <i className="align-middle" data-feather="settings" />
               {' '}
               <span className="align-middle">Settings</span>
@@ -145,7 +145,7 @@ const TutorDashboard = () => (
           </li>
 
           <li className="sidebar-item">
-            <a className="sidebar-link" href="#">
+            <a className="sidebar-link" href="/notfound">
               <i className="align-middle" data-feather="bar-chart-2" />
               {' '}
               <span className="align-middle">Rates</span>
@@ -153,7 +153,7 @@ const TutorDashboard = () => (
           </li>
 
           <li className="sidebar-item">
-            <a className="sidebar-link" href="#">
+            <a className="sidebar-link" href="/notfound">
               <i className="align-middle" data-feather="map" />
               {' '}
               <span className="align-middle">Packages</span>
@@ -183,7 +183,7 @@ const TutorDashboard = () => (
         <div className="navbar-collapse collapse">
           <ul className="navbar-nav navbar-align">
             <li className="nav-item dropdown">
-              <a className="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown">
+              <a className="nav-icon dropdown-toggle" href="/notfound" id="alertsDropdown" data-toggle="dropdown">
                 <div className="position-relative">
                   <i className="align-middle" data-feather="bell" />
                   <span className="indicator">4</span>
@@ -197,7 +197,7 @@ const TutorDashboard = () => (
                   4 New Notifications
                 </div>
                 <div className="list-group">
-                  <a href="#" className="list-group-item">
+                  <a href="/notfound" className="list-group-item">
                     <div className="row g-0 align-items-center">
                       <div className="col-2">
                         <i className="text-danger" data-feather="alert-circle" />
@@ -212,7 +212,7 @@ const TutorDashboard = () => (
                       </div>
                     </div>
                   </a>
-                  <a href="#" className="list-group-item">
+                  <a href="/notfound" className="list-group-item">
                     <div className="row g-0 align-items-center">
                       <div className="col-2">
                         <i className="text-warning" data-feather="bell" />
@@ -227,7 +227,7 @@ const TutorDashboard = () => (
                       </div>
                     </div>
                   </a>
-                  <a href="#" className="list-group-item">
+                  <a href="/notfound" className="list-group-item">
                     <div className="row g-0 align-items-center">
                       <div className="col-2">
                         <i className="text-primary" data-feather="home" />
@@ -238,7 +238,7 @@ const TutorDashboard = () => (
                       </div>
                     </div>
                   </a>
-                  <a href="#" className="list-group-item">
+                  <a href="/notfound" className="list-group-item">
                     <div className="row g-0 align-items-center">
                       <div className="col-2">
                         <i className="text-success" data-feather="user-plus" />
@@ -254,12 +254,12 @@ const TutorDashboard = () => (
                   </a>
                 </div>
                 <div className="dropdown-menu-footer">
-                  <a href="#" className="text-muted">Show all notifications</a>
+                  <a href="/notfound" className="text-muted">Show all notifications</a>
                 </div>
               </div>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-toggle="dropdown">
+              <a className="nav-icon dropdown-toggle" href="/notfound" id="messagesDropdown" data-toggle="dropdown">
                 <div className="position-relative">
                   <i className="align-middle" data-feather="message-square" />
                 </div>
@@ -274,7 +274,7 @@ const TutorDashboard = () => (
                   </div>
                 </div>
                 <div className="list-group">
-                  <a href="#" className="list-group-item">
+                  <a href="/notfound" className="list-group-item">
                     <div className="row g-0 align-items-center">
                       <div className="col-2">
                         <img
@@ -293,7 +293,7 @@ const TutorDashboard = () => (
                       </div>
                     </div>
                   </a>
-                  <a href="#" className="list-group-item">
+                  <a href="/notfound" className="list-group-item">
                     <div className="row g-0 align-items-center">
                       <div className="col-2">
                         <img
@@ -312,7 +312,7 @@ const TutorDashboard = () => (
                       </div>
                     </div>
                   </a>
-                  <a href="#" className="list-group-item">
+                  <a href="/notfound" className="list-group-item">
                     <div className="row g-0 align-items-center">
                       <div className="col-2">
                         <img
@@ -330,7 +330,7 @@ const TutorDashboard = () => (
                       </div>
                     </div>
                   </a>
-                  <a href="#" className="list-group-item">
+                  <a href="/notfound" className="list-group-item">
                     <div className="row g-0 align-items-center">
                       <div className="col-2">
                         <img
@@ -351,14 +351,14 @@ const TutorDashboard = () => (
                   </a>
                 </div>
                 <div className="dropdown-menu-footer">
-                  <a href="#" className="text-muted">Show all messages</a>
+                  <a href="/notfound" className="text-muted">Show all messages</a>
                 </div>
               </div>
             </li>
             <li className="nav-item dropdown">
               <a
                 className="nav-icon dropdown-toggle d-inline-block d-sm-none"
-                href="#"
+                href="/notfound"
                 data-toggle="dropdown"
               >
                 <i className="align-middle" data-feather="settings" />
@@ -366,7 +366,7 @@ const TutorDashboard = () => (
 
               <a
                 className="nav-link dropdown-toggle d-none d-sm-inline-block"
-                href="#"
+                href="/notfound"
                 data-toggle="dropdown"
               >
                 <img
@@ -395,7 +395,7 @@ const TutorDashboard = () => (
                   {' '}
                   Settings & Privacy
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/notfound">
                   <i
                     className="align-middle mr-1"
                     data-feather="help-circle"
@@ -404,7 +404,7 @@ const TutorDashboard = () => (
                   Help Center
                 </a>
                 <div className="dropdown-divider" />
-                <a className="dropdown-item" href="#">Log out</a>
+                <a className="dropdown-item" href="/notfound">Log out</a>
               </div>
             </li>
           </ul>
@@ -426,8 +426,8 @@ const TutorDashboard = () => (
             <div className="col-auto ml-auto text-right mt-n1">
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb bg-transparent p-0 mt-1 mb-0">
-                  <li className="breadcrumb-item"><a href="#">Soma1on1</a></li>
-                  <li className="breadcrumb-item"><a href="#">Pages</a></li>
+                  <li className="breadcrumb-item"><a href="/notfound">Soma1on1</a></li>
+                  <li className="breadcrumb-item"><a href="/notfound">Pages</a></li>
                   <li className="breadcrumb-item active" aria-current="page">Dashboard</li>
                 </ol>
               </nav>
@@ -442,7 +442,7 @@ const TutorDashboard = () => (
                     <div className="card yellow">
                       <div className="card-body d-flex align-items-center">
                         <div className="side1 ml-2 mr-4">
-                          <img src={crown} />
+                          <img src={crown} alt="" />
                         </div>
                         <div className="side2 mt-2 mb-2">
                           <h1 className="mb-2 card-value">394</h1>
@@ -456,7 +456,7 @@ const TutorDashboard = () => (
                     <div className="card pink">
                       <div className="card-body d-flex align-items-center">
                         <div className="side1 ml-2 mr-4">
-                          <img src={handshake} />
+                          <img src={handshake} alt="" />
                         </div>
                         <div className="side2 mt-2 mb-2">
                           <h1 className="mb-2 card-value">44</h1>
@@ -470,7 +470,7 @@ const TutorDashboard = () => (
                     <div className="card blue">
                       <div className="card-body d-flex align-items-center">
                         <div className="side1 ml-2 mr-4">
-                          <img src={mic} />
+                          <img src={mic} alt="" />
                         </div>
                         <div className="side2 mt-2 mb-2">
                           <h1 className="mb-2 card-value">274</h1>
@@ -598,7 +598,7 @@ const TutorDashboard = () => (
                         <h5 className="card-title c-title mt-2 mb-0">Your Chats</h5>
                       </div>
 
-                      <a href="#" className="list-group-item list-group-item-action border-0">
+                      <a href="/notfound" className="list-group-item list-group-item-action border-0">
                         <div className="badge bg-main float-right">5</div>
                         <div className="d-flex align-items-start">
                           <img
@@ -620,7 +620,7 @@ const TutorDashboard = () => (
                           </div>
                         </div>
                       </a>
-                      <a href="#" className="list-group-item list-group-item-action border-0">
+                      <a href="/notfound" className="list-group-item list-group-item-action border-0">
                         <div className="badge bg-main float-right">2</div>
                         <div className="d-flex align-items-start">
                           <img
@@ -642,7 +642,7 @@ const TutorDashboard = () => (
                           </div>
                         </div>
                       </a>
-                      <a href="#" className="list-group-item list-group-item-action border-0">
+                      <a href="/notfound" className="list-group-item list-group-item-action border-0">
                         <div className="d-flex align-items-start">
                           <img
                             src={avatar3}
@@ -663,7 +663,7 @@ const TutorDashboard = () => (
                           </div>
                         </div>
                       </a>
-                      <a href="#" className="list-group-item list-group-item-action border-0">
+                      <a href="/notfound" className="list-group-item list-group-item-action border-0">
                         <div className="d-flex align-items-start">
                           <img
                             src={avatar4}
@@ -684,7 +684,7 @@ const TutorDashboard = () => (
                           </div>
                         </div>
                       </a>
-                      <a href="#" className="list-group-item list-group-item-action border-0">
+                      <a href="/notfound" className="list-group-item list-group-item-action border-0">
                         <div className="d-flex align-items-start">
                           <img
                             src={avatar5}
@@ -705,7 +705,7 @@ const TutorDashboard = () => (
                           </div>
                         </div>
                       </a>
-                      <a href="#" className="list-group-item list-group-item-action border-0">
+                      <a href="/notfound" className="list-group-item list-group-item-action border-0">
                         <div className="d-flex align-items-start">
                           <img
                             src={avatar4}
@@ -726,7 +726,7 @@ const TutorDashboard = () => (
                           </div>
                         </div>
                       </a>
-                      <a href="#" className="list-group-item list-group-item-action border-0">
+                      <a href="/notfound" className="list-group-item list-group-item-action border-0">
                         <div className="d-flex align-items-start">
                           <img
                             src={avatar5}
@@ -756,7 +756,7 @@ const TutorDashboard = () => (
                       <div className="card-header pb-0">
                         <div className="card-actions float-right">
                           <div className="dropdown show">
-                            <a href="#" data-toggle="dropdown" data-display="static">
+                            <a href="/notfound" data-toggle="dropdown" data-display="static">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -776,9 +776,9 @@ const TutorDashboard = () => (
                             </a>
 
                             <div className="dropdown-menu dropdown-menu-right">
-                              <a className="dropdown-item" href="#">Action</a>
-                              <a className="dropdown-item" href="#">Another action</a>
-                              <a className="dropdown-item" href="#">Something else here</a>
+                              <a className="dropdown-item" href="/notfound">Action</a>
+                              <a className="dropdown-item" href="/notfound">Another action</a>
+                              <a className="dropdown-item" href="/notfound">Something else here</a>
                             </div>
                           </div>
                         </div>
@@ -803,10 +803,10 @@ const TutorDashboard = () => (
                                 <td>
                                   <img
                                     src={jed1}
-width="50"
+                                    width="50"
                                     height="50"
-className="rounded my-n1"
-alt="Avatar"
+                                    className="rounded my-n1"
+                                    alt="Avatar"
                                   />
                                 </td>
                                 <td>Moses K</td>
@@ -823,10 +823,10 @@ alt="Avatar"
                                 <td>
                                   <img
                                     src={jed2}
-width="50"
+                                    width="50"
                                     height="50"
-className="rounded my-n1"
-alt="Avatar"
+                                    className="rounded my-n1"
+                                    alt="Avatar"
                                   />
                                 </td>
                                 <td>Lillian Nakite</td>
@@ -843,10 +843,10 @@ alt="Avatar"
                                 <td>
                                   <img
                                     src={jed3}
-width="50"
+                                    width="50"
                                     height="50"
-className="rounded my-n1"
-alt="Avatar"
+                                    className="rounded my-n1"
+                                    alt="Avatar"
                                   />
                                 </td>
                                 <td>Okwi D</td>
@@ -863,10 +863,10 @@ alt="Avatar"
                                 <td>
                                   <img
                                     src={jed4}
-width="50"
+                                    width="50"
                                     height="50"
-className="rounded my-n1"
-alt="Avatar"
+                                    className="rounded my-n1"
+                                    alt="Avatar"
                                   />
                                 </td>
                                 <td>Nakimera S</td>
@@ -883,10 +883,10 @@ alt="Avatar"
                                 <td>
                                   <img
                                     src={jed5}
-width="50"
+                                    width="50"
                                     height="50"
-className="rounded my-n1"
-alt="Avatar"
+                                    className="rounded my-n1"
+                                    alt="Avatar"
                                   />
                                 </td>
                                 <td>Kintu H</td>
@@ -903,10 +903,10 @@ alt="Avatar"
                                 <td>
                                   <img
                                     src={avatar2}
-width="50"
+                                    width="50"
                                     height="50"
-className="rounded my-n1"
-alt="Avatar"
+                                    className="rounded my-n1"
+                                    alt="Avatar"
                                   />
                                 </td>
                                 <td>Haley K</td>
@@ -972,7 +972,7 @@ alt="Avatar"
                   <div className="align-self-center w-100">
                     <div className="chart">
                       {/* <div id="datetimepicker-dashboard" /> */}
-                      <img src={calendar} className="w-100" />
+                      <img src={calendar} className="w-100" alt="" />
                     </div>
                   </div>
                 </div>
@@ -995,16 +995,16 @@ alt="Avatar"
             <div className="col-6 text-right">
               <ul className="list-inline">
                 <li className="list-inline-item">
-                  <a className="text-muted" href="#">Support</a>
+                  <a className="text-muted" href="/notfound">Support</a>
                 </li>
                 <li className="list-inline-item">
-                  <a className="text-muted" href="#">Help Center</a>
+                  <a className="text-muted" href="/notfound">Help Center</a>
                 </li>
                 <li className="list-inline-item">
-                  <a className="text-muted" href="#">Privacy</a>
+                  <a className="text-muted" href="/notfound">Privacy</a>
                 </li>
                 <li className="list-inline-item">
-                  <a className="text-muted" href="#">Terms</a>
+                  <a className="text-muted" href="/notfound">Terms</a>
                 </li>
               </ul>
             </div>

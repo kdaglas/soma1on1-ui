@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 // import rightsider from '../../assets/images/splash/login-bg.svg';
 import email from '../../assets/icons/email.svg';
@@ -102,7 +102,7 @@ class Login extends React.Component {
                     <input type="checkbox" className="custom-control-input" id="customCheck1" />
                     <label className="custom-control-label" htmlFor="customCheck1">Show password</label>
                   </div>
-                  <a href="#!" className="text-reset text-link">Forgot password?</a>
+                  <a href="/notfound" className="text-reset text-link">Forgot password?</a>
                 </div>
 
                 <a href="/dashboard"><button className="btn btn-bg ripple btn-block login-btn">
@@ -114,7 +114,7 @@ class Login extends React.Component {
 
               <p className="login-card-footer-text">
                 Don’t have an account,
-                <a href="#!" className="text-reset text-link"> Sign Up Here</a>
+                <a href="/notfound" className="text-reset text-link"> Sign Up Here</a>
               </p>
             </div>
           </div>
