@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import TutorDashboard from '../components/Dashboard/tutordashboard';
+// import TutorDashboard from '../components/Dashboard/tutordashboard';
 import TutorDashboardView from '../pages/Dashboard/tutordashview';
 // import AboutView from '../containers/About/aboutview';
 // import GalleryView from '../containers/Gallery/galleryview';
@@ -19,12 +19,12 @@ import LoginView from '../pages/Auth/loginview';
 // import Footer from '../shared/footer/Footer';
 
 const Routes = () => (
-    <Router>
-        <Switch>
-            <Route path="/" exact component={ HomeView } />
-            <Route path="/dashboard" exact component={ TutorDashboardView } />
-            <Route path="/login" exact component={ LoginView } />
-            {/* <Route path="/about" exact component={ AboutView } />
+  <Router>
+    <Switch>
+      <Route path="/" exact component={HomeView} />
+      <Route path="/dashboard" exact component={TutorDashboardView} />
+      <Route path="/login" exact component={LoginView} />
+      {/* <Route path="/about" exact component={ AboutView } />
             <Route path="/accommodate" exact component={ AccommodationView } />
             <Route path="/gallery" exact component={ GalleryView } />
             <Route path="/details" exact component={ DetailsView } />
@@ -33,8 +33,8 @@ const Routes = () => (
             <Route path="/activities" exact component={ ActivitiesView } />
             <Route path="/facilities" exact component={ FacilitiesView } />
             <Route path="/notfound" exact component={ Notfoundpage } /> */}
-        </Switch>
-    </Router>
-)
+    </Switch>
+  </Router>
+);
 
 export default Routes;

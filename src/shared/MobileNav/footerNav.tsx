@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const FooterNav = styled.div`
         display: flex;
@@ -38,6 +38,6 @@ const FooterNav = styled.div`
             font-weight: 500;
         }
     }
-`
+`;
 
 export default FooterNav;

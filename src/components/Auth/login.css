@@ -1,25 +1,56 @@
-.body {
-  /* background-color: #e7e9f2 #eff1f9; */
-  /* background-color: white; */
-  /* background: #fbfbfb !important; */
-
-  /* background: #eb01a5; */
-  /* background-image: url("IMAGE_URL"); fallback */
-  /* background-image: url("IMAGE_URL"), linear-gradient(#eb01a5, #d13531); */
-
-  /* background: linear-gradient( 310.6deg, #f09537 37.8%, #ed6f33 90.8%); */
-
-  background-image: linear-gradient(
-      310.6deg,
-      rgba(240, 147, 55, 0.7) 37.8%,
-      rgba(237, 110, 51, 0.7) 90.8%
-    ),
-    url("../../assets/images/splash/login-bg.svg");
+.auth-log {
+  background-image: url("../../assets/images/splash/login-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  color: #334151;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
+
+.login-box {
+  display: flex;
+  width: 70%;
+  height: 70vh;
+  margin: auto auto;
+  background: #FFFFFF;
+  box-shadow: -5px -3px 10px rgba(0, 0, 0, 0.07), 5px 3px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+}
+
+.auth-log .login-box .nilesafarivideo,
+.auth-log .login-box .leftsider {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.auth-log .login-box .leftsider .content {
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+.auth-log .login-box .leftsider .content .more-content {
+  width: 70% !important;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.auth-log .login-box .leftsider .content .more-content h1 {
+  margin: 50px auto;
+  font-size: 45px;
+}
+
+.auth-log .login-box .leftsider .content .more-content p {
+  color: #A2A3B3;
+  font-size: 17px;
+}
+
+
+
+
+
 
 .reset-body {
   min-height: 100vh;
@@ -29,7 +60,7 @@
 .login-card-footer-text a:hover,
 .form-options-wrapper a:hover {
   text-decoration: none;
-  color: #8760fb !important;
+  color: #E23744 !important;
   transition: 0.3s;
 }
 
@@ -40,45 +71,102 @@
   }
 }
 
-.login-card {
+/* .login-card {
   width: 441px;
   border-radius: 7px;
-  /* border: 0; */
+  border: 0;
   background-color: #fff;
   border: 1px solid  #ed6f33 !important;
   box-shadow: -7px -7px 7px rgba(0, 0, 0, 0.05), 7px 7px 7px rgba(0, 0, 0, 0.05) !important;
-}
+} */
 @media (max-width: 767px) {
   .login-card {
     width: auto;
   }
 }
-.login-card .card-body {
+/* .login-card .card-body {
   padding: 55px 55px 50px;
-}
-.login-card-title {
+} */
+/* .login-card-title {
   font-size: 25px;
   text-align: center;
   font-weight: bold;
-  /* color: #000; */
+  color: #000;
   margin-bottom: 13px;
-}
+} */
 .login-card-description {
-  font-size: 20px;
+  font-size: 25px;
   /* color: #000; */
+  /* font-family: Mons;
   text-align: center;
-  font-weight: normal;
-  margin-bottom: 20px;
+  font-weight: normal; */
+  margin-bottom: 37px;
 }
-.login-card .form-control {
-  /* f5f5f5; */
-  border: 1px solid #e1e6f1;
-  padding: 16px 18px;
-  margin-bottom: 18px;
-  border-radius: 0;
-  min-height: 48px;
+
+.form-title {
+  color: #E23744;
+  font-weight: bold;
+}
+
+.text-link {
+  font-weight: bold;
   font-size: 14px;
+}
+
+Link {
+  text-decoration: none !important;
+}
+
+Link:hover {
+  text-decoration: none !important;
+}
+
+.login-form {
+  /* border: 1px solid green; */
+  width: 80%;
+}
+
+.input-group-text {
+  background: transparent !important;
+  border-radius: 4px 0 0 4px;
+  min-height: 47px;
+  width: 47px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-icon {
+  padding: 0 !important;
+  /* background: #fff; */
+  /* color: white; */
+  /* border: 1px solid red; */
+  height: 17px;
+  /* height: 15px; */
+  text-align: center;
+}
+
+.auth-log .login-box .nilesafarivideo .videobg .form-group .form-control {
+  /* f5f5f5; */
+  /* border: 1px solid #e1e6f1; */
+  /* padding: 16px 18px; */
+  margin-bottom: 17px;
+  border-radius: 0 4px 4px 0;
+  min-height: 47px;
+  /* font-size: 15px; */
+  color: #A8A8A8;
   font-weight: normal;
+
+  /* width: 100%; */
+  /* padding: 7px 55px; */
+  height: 47px;
+  /* width: 435px; */
+  outline: none;
+  background: transparent;
+  border: 1px solid #DBDBDB !important;
+  color: rgb(214, 214, 214);
+  font-size: 15px;
 }
 .login-card .form-control::-webkit-input-placeholder {
   color: #b0adad;
@@ -95,53 +183,55 @@
 .login-card .form-control::placeholder {
   color: #b0adad;
 }
-.login-card-check-box {
+/* .login-card-check-box {
   padding-left: 34px;
-}
-@media (max-width: 767px) {
+} */
+/* @media (max-width: 767px) {
   .login-card-check-box {
     margin-bottom: 10px;
   }
-}
-.login-card-check-box .custom-control-label::before {
-  width: 24px;
+} */
+/* .login-card-check-box .custom-control-label::before { */
+  /* width: 24px !important;
   height: 21px;
-  border: solid 1px #f5f5f5;
-  left: -34px;
-  top: 0px;
+  border: solid 1px #f5f5f5; */
+  /* left: -34px;
+  top: 0px; */
+
+  /* margin-right: 7px;
 }
 .login-card-check-box .custom-control-label::after {
   left: -34px;
   width: 24px;
   height: 21px;
   top: 0;
-}
+} */
 .login-card .login-btn {
-  padding: 13px 20px;
+  /* padding: 13px 20px;
   border: 1px solid #ed6f33;
-  transition: 0.3s;
+  transition: 0.3s; */
   /* background-color:#ed6f33; */
-  background: linear-gradient(310.6deg, #f09537 37.8%, #ed6f33 90.8%);
+  /* background: linear-gradient(310.6deg, #f09537 37.8%, #ed6f33 90.8%);
   border-radius: 3px;
   font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: #fff; */
   margin-bottom: 20px;
 }
-.login-card .login-btn:hover {
+/* .login-card .login-btn:hover {
   border: 1px solid #ed6f33;
   background: #fff;
   color: #ed6f33;
   transition: 0.5s;
-}
+} */
 
 .login-card .login-btn:focus {
-  border: 1px solid #ed6f33 !important;
+  /* border: 1px solid #ed6f33 !important; */
   /* background: #fff; */
-  background: linear-gradient(310.6deg, #f09537 37.8%, #ed6f33 90.8%) !important;
+  /* background: linear-gradient(310.6deg, #f09537 37.8%, #ed6f33 90.8%) !important; */
   /* color: #ed6f33; */
-  color: #fff;
-  transition: 0.5s;
+  /* color: #fff;
+  transition: 0.5s; */
 }
 
 .login-btn-spinner {
@@ -153,10 +243,10 @@
 	box-shadow: 0 0 0 1px rgb(135, 96, 251);
 } */
 .login-card-footer-text {
-  font-size: 13px;
+  font-size: 14px;
   /* color: #000; */
   text-align: center;
-  /* margin-bottom: 0; */
+  margin-top: 17px;
 }
 
 .form-options-wrapper {
@@ -167,8 +257,8 @@
   -webkit-box-pack: justify;
   justify-content: space-between;
   margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: normal;
+  /* font-size: 14px; */
+  /* font-weight: normal; */
   /* color: #000; */
 }
 @media (max-width: 767px) {
@@ -205,7 +295,7 @@
 /*# sourceMappingURL=login.css.map */
 
 
-.dropify-wrapper {
+/* .dropify-wrapper {
   border: 2px dashed #f3f3f3;
   border-radius: 7px;
 }
@@ -352,14 +442,14 @@
   background-color: #FFF;
   -webkit-transition: border-color .15s linear;
   transition: border-color .15s linear;
-}
+} */
 
 img {
   vertical-align: middle;
   border-style: none;
 }
 
-.dropify-wrapper .dropify-preview .dropify-infos {
+/* .dropify-wrapper .dropify-preview .dropify-infos {
   background: rgba(255, 255, 255, 0.9);
 }
 
@@ -437,4 +527,4 @@ img {
   text-align: center;
   line-height: 25px;
   font-weight: 700;
-}
+} */

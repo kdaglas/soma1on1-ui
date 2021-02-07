@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const MobileNav = styled.div`
     .overlay__links {
@@ -55,6 +55,6 @@ const MobileNav = styled.div`
             font-size: 20px;
         }
     }
-`
+`;
 
 export default MobileNav;
