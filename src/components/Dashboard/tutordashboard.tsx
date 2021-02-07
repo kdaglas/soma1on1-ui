@@ -61,7 +61,7 @@ const TutorDashboard = () => (
           </li>
 
           <li className="sidebar-item">
-            <a data-target="#ui" data-toggle="collapse" className="sidebar-link collapsed">
+            <a href="/notfound" data-target="#ui" data-toggle="collapse" className="sidebar-link collapsed">
               <i className="align-middle" data-feather="briefcase" />
               {' '}
               <span
@@ -89,7 +89,7 @@ const TutorDashboard = () => (
           </li>
 
           <li className="sidebar-item">
-            <a data-target="#forms" data-toggle="collapse" className="sidebar-link collapsed">
+            <a href="/notfound" data-target="#forms" data-toggle="collapse" className="sidebar-link collapsed">
               <i className="align-middle" data-feather="check-circle" />
               {' '}
               <span
@@ -167,7 +167,7 @@ const TutorDashboard = () => (
     <div className="main">
 
       <nav className="navbar navbar-expand navbar-light navbar-bg">
-        <a className="sidebar-toggle d-flex">
+        <a href="/notfound" className="sidebar-toggle d-flex">
           <i className="hamburger align-self-center" />
         </a>
 
