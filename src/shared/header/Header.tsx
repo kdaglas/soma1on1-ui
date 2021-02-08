@@ -19,20 +19,22 @@ const style: CSS.Properties = {
 };
 
 class Header extends React.Component {
-    state = {
-      style,
-      hideNav: true,
-      showNav: false,
-    }
+  state = {
+    style,
+    hideNav: true,
+    showNav: false,
+  }
 
-    myRef = React.createRef();
+  myRef = React.createRef();
 
-    componentDidMount() {
-      window.addEventListener('scroll', this.handleScroll);
-    }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
 
-    openNavBar = () => {
-      this.state.showNav = !this.state.showNav;
+  openNavBar = () => {
+    this.setState({
+      showNav: !this.state.showNav,
+    }, () => {
       this.setState({
         style: {
           width: this.state.showNav ? '100%' : '0',
@@ -47,66 +49,67 @@ class Header extends React.Component {
         },
         showNav: true,
       });
+    })
+  }
+
+  handleScroll = () => {
+    const scrollPosition = window.pageYOffset;
+    if (scrollPosition > 775) {
+      this.setState({ hideNav: false });
+    } else {
+      this.setState({ hideNav: true });
     }
+  }
 
-    handleScroll = () => {
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition > 775) {
-        this.setState({ hideNav: false });
-      } else {
-        this.setState({ hideNav: true });
-      }
-    }
+  render() {
+    const { hideNav } = this.state;
+    const { style } = this.state;
+    return (
+      <div className={hideNav ? 'hide header' : ' header show'}>
+        <div className={hideNav ? 'cover cover-show' : 'cover cover-hide'} />
+        <div className="nav">
+          <Link to="/"><img className="logo" src={logo} alt="logo" /></Link>
 
-    render() {
-      const { hideNav } = this.state;
-      const { style } = this.state;
-      return (
-        <div className={hideNav ? 'hide header' : ' header show'}>
-          <div className={hideNav ? 'cover cover-show' : 'cover cover-hide'} />
-          <div className="nav">
-            <Link to="/"><img className="logo" src={logo} alt="logo" /></Link>
+          <nav>
+            <ul className="nav__links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/notfound">Courses</a></li>
+              <li><a href="/notfound">Platform</a></li>
+              <li><a href="/notfound">Pricing</a></li>
+              <li><a href="/notfound">About</a></li>
+            </ul>
+          </nav>
 
-            <nav>
-              <ul className="nav__links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/notfound">Courses</a></li>
-                <li><a href="/notfound">Platform</a></li>
-                <li><a href="/notfound">Pricing</a></li>
-                <li><a href="/notfound">About</a></li>
-              </ul>
-            </nav>
+          <div className="auth-section">
+            {/* <Link to="/">login</Link> */}
 
-            <div className="auth-section">
-              {/* <Link to="/">login</Link> */}
+            <button className="btn btn-bg auth-btn">start now</button>
 
-              <button className="btn btn-bg auth-btn">start now</button>
-
-              <div className="menu" onClick={this.openNavBar} onKeyDown={this.openNavBar}>
-                <div className="bar half start" />
-                <div className="bar" />
-                <div className="bar half end" />
-              </div>
+            <div className="menu" onClick={this.openNavBar} onKeyDown={this.openNavBar}>
+              <div className="bar half start" />
+              <div className="bar" />
+              <div className="bar half end" />
             </div>
           </div>
-
-          <MobileNav style={style}>
-            <button onClick={this.openNavBar} className="close">&times;</button>
-
-            <div className="overlay__links">
-              <Link to="/"><img className="logo" src={logo} alt="logo" /></Link>
-              <Link to="/">Home</Link>
-              <Link to="/activities">Courses</Link>
-              <Link to="/accommodate">Platform</Link>
-              <Link to="/gallery">Pricing</Link>
-              <Link to="/about">About</Link>
-            </div>
-          </MobileNav>
-
-          <script />
         </div>
-      );
-    }
+
+        <MobileNav style={style}>
+          <button onClick={this.openNavBar} className="close">&times;</button>
+
+          <div className="overlay__links">
+            <Link to="/"><img className="logo" src={logo} alt="logo" /></Link>
+            <Link to="/">Home</Link>
+            <Link to="/activities">Courses</Link>
+            <Link to="/accommodate">Platform</Link>
+            <Link to="/gallery">Pricing</Link>
+            <Link to="/about">About</Link>
+          </div>
+        </MobileNav>
+
+        <script />
+      </div>
+    );
+  }
 }
 
 export default Header;
