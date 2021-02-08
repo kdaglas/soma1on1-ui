@@ -1,7 +1,7 @@
 import React from 'react';
 import DropdownMultiselect from "react-multiselect-dropdown-bootstrap";
 // import Multiselect from "react-bootstrap-multiselect";
-import { Multiselect } from 'multiselect-react-dropdown';
+// import { Multiselect } from 'multiselect-react-dropdown';
 
 import email from '../../../assets/icons/email.svg';
 import password from '../../../assets/icons/password.svg';
