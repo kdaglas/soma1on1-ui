@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '../../assets/img/normal-logo.svg';
+import logo from '../../assets/images/logos/normal-logo.svg';
 
 import crown from '../../assets/img/crown.svg';
 // import dash from '../../assets/img/dash.svg';

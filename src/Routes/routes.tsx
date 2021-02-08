@@ -16,6 +16,7 @@ import TutorDashboardView from '../pages/Dashboard/tutordashview';
 import HomeView from '../pages/Home/homeview';
 import LoginView from '../pages/Auth/loginview';
 import Notfoundpage from '../shared/Not';
+import SelectSubjectView from '../pages/Auth/selectsubjectview';
 // import Notfoundpage from '../shared/Not';
 // import Footer from '../shared/footer/Footer';
 
@@ -25,6 +26,7 @@ const Routes = () => (
       <Route path="/" exact component={HomeView} />
       <Route path="/dashboard" exact component={TutorDashboardView} />
       <Route path="/login" exact component={LoginView} />
+      <Route path="/select-subject" exact component={ SelectSubjectView } />
       <Route path="/notfound" exact component={ Notfoundpage } />
       {/* <Route path="/about" exact component={ AboutView } />
             <Route path="/accommodate" exact component={ AccommodationView } />

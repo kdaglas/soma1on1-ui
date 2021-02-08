@@ -2,9 +2,9 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 
 // import rightsider from '../../assets/images/splash/login-bg.svg';
-import email from '../../assets/icons/email.svg';
-import password from '../../assets/icons/password.svg';
-import logo from '../../assets/images/logos/normal-logo.svg';
+import email from '../../../assets/icons/email.svg';
+import password from '../../../assets/icons/password.svg';
+import logo from '../../../assets/images/logos/normal-logo.svg';
 import './banner.css';
 import './login.css';
 
@@ -48,12 +48,12 @@ class Login extends React.Component {
                   Your one great
                   ticket to a Quick
                   Education
-              </h1>
+                </h1>
 
                 <p>
                   Connecting the world
                   world to learn
-              </p>
+                </p>
               </div>
             </div>
           </div>
@@ -70,7 +70,9 @@ class Login extends React.Component {
                   {/* <label htmlFor="username" className="sr-only">Email Address</label> */}
                   {/* <img src={email} alt='email' className="icon" /> */}
                   <div className="input-group-prepend">
-                    <span className="input-group-text border-right-0" id="basic-addon1"><img src={email} alt='email' className="login-form-icon" /></span>
+                    <span className="input-group-text border-right-0" id="basic-addon1">
+                      <img src={email} alt='email' className="login-form-icon" />
+                    </span>
                   </div>
                   <input
                     type="text"
@@ -85,7 +87,9 @@ class Login extends React.Component {
                 <div className="form-group input-group">
                   {/* <label htmlFor="password" className="sr-only">Password</label> */}
                   <div className="input-group-prepend">
-                    <span className="input-group-text border-right-0" id="basic-addon1"><img src={password} alt='email' className="login-form-icon" /></span>
+                    <span className="input-group-text border-right-0" id="basic-addon1">
+                      <img src={password} alt='email' className="login-form-icon" />
+                    </span>
                   </div>
                   <input
                     type="password"
@@ -105,16 +109,19 @@ class Login extends React.Component {
                   <a href="/notfound" className="text-reset text-link">Forgot password?</a>
                 </div>
 
-                <a href="/dashboard"><button className="btn btn-bg ripple btn-block login-btn">
-                  {/* <span aria-hidden="true" className="spinner-border spinner-border-sm login-btn-spinner" role="status" /> */}
-                  Sign In
+                
+                  <button className="btn btn-bg ripple btn-block login-btn">
+                  <a href="/dashboard">
+                    {/* <span aria-hidden="true" className="spinner-border spinner-border-sm login-btn-spinner" role="status" /> */}
+                    Sign In
+                    </a>
                   </button>
-                </a>
+                
               </form>
 
               <p className="login-card-footer-text">
                 Don’t have an account,
-                <a href="/notfound" className="text-reset text-link"> Sign Up Here</a>
+                <a href="/notfound" className="text-reset text-link text-white"> Sign Up Here</a>
               </p>
             </div>
           </div>
