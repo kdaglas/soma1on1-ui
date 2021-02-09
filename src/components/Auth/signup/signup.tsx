@@ -134,60 +134,77 @@ const SignUp = () => (
                         </div>
 
                         <div className="resident-forms">
-                            <div className="residence">
+                            <div className="residence mr-5">
                                 <p className="form-title">Specification</p>
-                                <div className="form-group input-group">
-                                    {/* <label htmlFor="username" className="sr-only">Email Address</label> */}
-                                    {/* <img src={email} alt='email' className="icon" /> */}
-                                    <div className="input-group-prepend">
-                                        <span className="input-group-text border-right-0" id="basic-addon1">
-                                            <img src={profile} alt='email' className="login-form-icon" />
-                                        </span>
+                                <div className="d-flex">
+                                    <div className="form-check mr-3">
+                                        <input
+                                            className="form-check-input"
+                                            type="radio"
+                                            name="flexRadioDefault"
+                                            id="flexRadioDefault1"
+                                        />
+                                        <label className="form-check-label" htmlFor="flexRadioDefault1">
+                                            Tutor
+                                    </label>
                                     </div>
-                                    <input
-                                        type="text"
-                                        name="email"
-                                        id="email"
-                                        className="form-control border-left-0"
-                                        placeholder="First Name"
-                                    />
+                                    <div className="form-check">
+                                        <input
+                                            className="form-check-input"
+                                            type="radio"
+                                            name="flexRadioDefault"
+                                            id="flexRadioDefault2"
+                                            checked
+                                        />
+                                        <label className="form-check-label" htmlFor="flexRadioDefault2">
+                                            Student
+                                    </label>
+                                    </div>
                                 </div>
                             </div>
                             <div className="study">
                                 <p className="form-title">Gender</p>
-                                <div className="form-group input-group">
-                                    {/* <label htmlFor="password" className="sr-only">Password</label> */}
-                                    <div className="input-group-prepend">
-                                        <span className="input-group-text border-left-0" id="basic-addon1">
-                                            <img src={profile} alt='email' className="login-form-icon" />
-                                        </span>
+                                <div className="d-flex">
+                                    <div className="form-check mr-3">
+                                        <input
+                                            className="form-check-input"
+                                            type="radio"
+                                            name="flexRadioDefault"
+                                            id="flexRadioDefault1"
+                                        />
+                                        <label className="form-check-label" htmlFor="flexRadioDefault1">
+                                            Male
+                                        </label>
                                     </div>
-                                    <input
-                                        type="checkbox"
-                                        name="password"
-                                        id="password"
-                                        className="form-control border-right-0"
-                                        placeholder="Last Name"
-                                    />
+                                    <div className="form-check">
+                                        <input
+                                            className="form-check-input"
+                                            type="radio"
+                                            name="flexRadioDefault"
+                                            id="flexRadioDefault2"
+                                            checked
+                                        />
+                                        <label className="form-check-label" htmlFor="flexRadioDefault2">
+                                            Female
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-
-                        <a href="/select-subjects">
-                            <button className="btn btn-bg ripple btn-block login-btn mt-4">
-
+                        
+                        <button className="btn btn-bg ripple btn-block login-btn mt-5">
+                            <a href="/select-subjects">
                                 {/* <span aria-hidden="true" className="spinner-border spinner-border-sm login-btn-spinner" role="status" /> */}
-                                Sign In
-                            </button>
-                        </a>
-
+                                NEXT
+                            </a>
+                        </button>
                     </form>
 
-                    {/* <p className="login-card-footer-text">
-                        Don’t have an account,
-                <a href="/notfound" className="text-reset text-link text-white"> Sign Up Here</a>
-                    </p> */}
+                    <p className="login-card-footer-text">
+                        Already have an account,
+                <a href="/login" className="text-reset text-link text-white"> Login Here</a>
+                    </p>
                 </div>
             </div>
         </div>
