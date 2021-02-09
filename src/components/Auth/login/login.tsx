@@ -10,12 +10,7 @@ import './login.css';
 
 class Login extends React.Component {
   state = {
-    // username: '',
-    // password: '',
-    // error: false,
     info: '',
-    // loading: false,
-    // login: false,
   }
 
   onChangeUsername = (event: any) => {
@@ -59,7 +54,6 @@ class Login extends React.Component {
           </div>
 
           <div className="nilesafarivideo">
-            {/* <img className='videobg' src={rightsider} alt="" /> */}
             <div className="videobg">
               <h3 className="login-card-description">Login to soma1on1</h3>
               {this.state.info}
@@ -67,8 +61,6 @@ class Login extends React.Component {
                 <p className="form-title">Account</p>
 
                 <div className="form-group input-group">
-                  {/* <label htmlFor="username" className="sr-only">Email Address</label> */}
-                  {/* <img src={email} alt='email' className="icon" /> */}
                   <div className="input-group-prepend">
                     <span className="input-group-text border-right-0" id="basic-addon1">
                       <img src={email} alt='email' className="login-form-icon" />
@@ -85,7 +77,6 @@ class Login extends React.Component {
                 </div>
 
                 <div className="form-group input-group">
-                  {/* <label htmlFor="password" className="sr-only">Password</label> */}
                   <div className="input-group-prepend">
                     <span className="input-group-text border-right-0" id="basic-addon1">
                       <img src={password} alt='email' className="login-form-icon" />
@@ -112,7 +103,6 @@ class Login extends React.Component {
                 
                   <button className="btn btn-bg ripple btn-block login-btn">
                   <a href="/dashboard">
-                    {/* <span aria-hidden="true" className="spinner-border spinner-border-sm login-btn-spinner" role="status" /> */}
                     Sign In
                     </a>
                   </button>
@@ -121,7 +111,7 @@ class Login extends React.Component {
 
               <p className="login-card-footer-text">
                 Don’t have an account,
-                <a href="/notfound" className="text-reset text-link text-white"> Sign Up Here</a>
+                <a href="/signup" className="text-reset text-link text-white"> Sign Up Here</a>
               </p>
             </div>
           </div>

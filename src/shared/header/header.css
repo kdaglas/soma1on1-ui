@@ -94,31 +94,10 @@
   /* outline: none; */
 }
 
-.header .nav .auth-section .auth-btn:hover {
-  /* margin-right: 25px; */
-  /* outline: none; */
-  /* font-family: Montserrat-Bold;
-  font-size: 15px; */
-  /* text-transform: uppercase; */
-  /* border: 0; */
-  /* height: 45px; */
-  /* background: #c22e3a; */
-  /* color: #fff; */
-  /* width: 170px; */
-  /* transition: 0.3s;
-  border-radius: 5px; */
-  /* outline: none; */
-}
-
-.header .nav .auth-section .menu {
-  /* display: none */
-}
-
-.header .nav .btn:hover {
-  /* color: #E23744; */
-  /* Ann ID 5-4363000030638 */
-  /* Rob Case ID: 5-4363000030638 */
-  /* 0704775747 */
+.login-txt {
+  font-size: 18px;
+  margin: 7px 17px;
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 767px) {
@@ -164,5 +143,76 @@
   
   .header .nav .auth-section .menu .bar.half {
     width: 50%;
+  }
+}
+
+
+
+/* CSS FOR MOBILE NAV */
+
+.mobile-style {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(226, 55, 68);
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay__links {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay__links a {
+  padding: 15px;
+  font-family: Montserrat-Bold;
+  font-size: 27px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  text-decoration: none;
+}
+
+.overlay__links a:hover,
+.overlay__links a:focus,
+button:hover {
+  color: #000; 
+}
+
+.close {
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  background: transparent;
+  border: none;
+  outline: none;
+  top: 15px;
+  right: 40px;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.overlay__links a img {
+  width: 220px;
+  margin: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  .overlay__links a img {
+      width: 130px;
+      margin: 20px;
+      text-align: center;
+  }
+
+  .overlay__links a {
+      font-size: 20px;
   }
 }

@@ -1,26 +1,22 @@
 import React from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
-import CSS from 'csstype';
 
 import logo from '../../assets/images/logos/normal-logo.svg';
-import MobileNav from '../MobileNav/mobileNav';
-
-const style: CSS.Properties = {
-  width: '0',
-  height: '100%',
-  position: 'fixed',
-  zIndex: 1,
-  left: 0,
-  top: 0,
-  backgroundColor: 'rgb(226, 55, 68)',
-  overflowX: 'hidden',
-  transition: 'all 0.5s ease 0s',
-};
 
 class Header extends React.Component {
   state = {
-    style,
+    style: {
+      width: '0',
+      height: '100%',
+      position: 'fixed',
+      zIndex: 1,
+      left: 0,
+      top: 0,
+      backgroundColor: 'rgb(226, 55, 68)',
+      overflowX: 'hidden',
+      transition: 'all 0.5s ease 0s',
+    },
     hideNav: true,
     showNav: false,
   }
@@ -63,7 +59,6 @@ class Header extends React.Component {
 
   render() {
     const { hideNav } = this.state;
-    const { style } = this.state;
     return (
       <div className={hideNav ? 'hide header' : ' header show'}>
         <div className={hideNav ? 'cover cover-show' : 'cover cover-hide'} />
@@ -81,9 +76,9 @@ class Header extends React.Component {
           </nav>
 
           <div className="auth-section">
-            {/* <Link to="/">login</Link> */}
+            <Link to="/login"><p className="login-txt">login</p></Link>
 
-            <button className="btn btn-bg auth-btn">start now</button>
+            <a href="/signup"><button className="btn btn-bg auth-btn">start now</button></a>
 
             <div className="menu" onClick={this.openNavBar} onKeyDown={this.openNavBar}>
               <div className="bar half start" />
@@ -93,18 +88,18 @@ class Header extends React.Component {
           </div>
         </div>
 
-        <MobileNav style={style}>
+        <div className="mobile-style">
           <button onClick={this.openNavBar} className="close">&times;</button>
 
           <div className="overlay__links">
             <Link to="/"><img className="logo" src={logo} alt="logo" /></Link>
             <Link to="/">Home</Link>
-            <Link to="/activities">Courses</Link>
-            <Link to="/accommodate">Platform</Link>
-            <Link to="/gallery">Pricing</Link>
-            <Link to="/about">About</Link>
+            <Link to="/notfound">Courses</Link>
+            <Link to="/notfound">Platform</Link>
+            <Link to="/notfound">Pricing</Link>
+            <Link to="/notfound">About</Link>
           </div>
-        </MobileNav>
+        </div>
 
         <script />
       </div>

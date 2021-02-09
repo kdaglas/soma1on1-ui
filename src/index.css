@@ -1,7 +1,3 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 @font-face {
   font-family: Montserrat-Regular; 
   src: url('./assets/fonts/Montserrat/Montserrat-Regular.ttf');
@@ -140,11 +136,6 @@ h5 {
 /* CSS FOR THE FORM 
 --------------------------------------- */
 
-/* form {
-  max-width: 350px;
-  margin: 30px 0 0;
-} */
-
 .input-container {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -180,88 +171,9 @@ h5 {
 	transition: 0s;
 }
 
-/* .icon {
-  padding: 10px;
-  background: #fff;
-  color: white;
-  width: 43px;
-  height: 43px;
-  text-align: center;
-} */
-
-/* .input-field {
-  width: 100%;
-  padding: 7px 55px;
-  height: 47px;
-  width: 435px;
-  outline: none;
-  background: transparent;
-  border: 1px solid #DBDBDB !important;
-  color: rgb(214, 214, 214);
-  font-size: 15px;
-} */
-
-/* .btn-bg-1 {
-  background: transparent !important;
-  color: #E23744 !important;
-  transition: 0.3s;
-  border: 2px solid #fff !important;
-}
-
-.btn-bg-2 {
-  background: #E23744 !important;
-  color: #fff !important;
-  transition: 0.3s;
-  border: 2px solid #E23744 !important;
-}
-
-.btn-bg-1:hover {
-  background: #E23744 !important;
-  transition: 0.3s;
-  color: #fff !important;
-} */
-
-
-
-/* .btn-bg-3:hover {
-  background: #fff !important;
-  color: #E23744 !important;
-  transition: 0.3s;
-  border: 2px solid #E23744 !important;
-} */
-
-/* .btn-bg-4:hover {
-  background: #c8323f !important;
-  color: #fff !important;
-  transition: 0.3s;
-  border: 2px solid #c8323f !important;
-} */
-
-
-
-/* h1, h2, h3, h4, h5 { */
-  /* margin: 0;
-  padding: 0;
-  font-family: Montserrat-ExtraBold; */
-  /* font-weight: normal; */
-  /* font-weight: 900; */
-/* } */
-
-/* h2 {
-  font-size: 27px;
-}
-
-h3 {
-  font-size: 23px;
-} */
-
 p,
 span {
-  /* margin: 0;
-  padding: 0; */
   font-size: 15px;
-  /* line-height: 1.37; */
-  /* font-weight: bold; */
 }
 
 .custom-elevation-z2 {

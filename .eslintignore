@@ -11,5 +11,6 @@
 #misc
 /Procfile
 /src/css/**
+/src/assets/**
 /src/assets/css/**
 /src/images/**
