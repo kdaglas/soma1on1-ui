@@ -159,7 +159,7 @@ const SignUp = () => (
 
 
                         <button className="btn btn-bg ripple btn-block login-btn mt-5">
-                            <a href="/select-subjects">
+                            <a href="/select-subject">
                                 {/* <span aria-hidden="true" className="spinner-border spinner-border-sm login-btn-spinner" role="status" /> */}
                                 NEXT
                             </a>
