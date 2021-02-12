@@ -63,7 +63,7 @@
 }
 
 .header .nav .nav__links li a {
-  font-family: Montserrat-Bold;
+  font-family: Rubik-Bold;
   color: #000;
   transition: color 0.37s ease 0s;
   text-decoration: none;
@@ -172,7 +172,7 @@
 
 .overlay__links a {
   padding: 15px;
-  font-family: Montserrat-Bold;
+  font-family: Rubik-Bold;
   font-size: 27px;
   display: block;
   transition: all 0.3s ease 0s;

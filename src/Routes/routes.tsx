@@ -6,6 +6,7 @@ import LoginView from '../pages/Auth/loginview';
 import Notfoundpage from '../shared/Not';
 import SelectSubjectView from '../pages/Auth/selectsubjectview';
 import SignUpView from '../pages/Auth/signupview';
+import ProfileView from '../pages/Profile/profileview';
 
 const Routes = () => (
   <Router>
@@ -15,6 +16,7 @@ const Routes = () => (
       <Route path="/login" exact component={LoginView} />
       <Route path="/signup" exact component={SignUpView} />
       <Route path="/select-subject" exact component={ SelectSubjectView } />
+      <Route path="/profile" exact component={ ProfileView } />
       <Route path="/notfound" exact component={ Notfoundpage } />
     </Switch>
   </Router>

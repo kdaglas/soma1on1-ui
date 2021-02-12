@@ -28,20 +28,59 @@
   src: url('./assets/fonts/Montserrat/Montserrat-Black.ttf');
 }
 
+
+
+
+
+@font-face {
+  font-family: Rubik-Regular; 
+  src: url('./assets/fonts/Rubik/Rubik-Regular.ttf');
+}
+
+@font-face {
+  font-family: Rubik-Medium;
+  src: url('./assets/fonts/Rubik/Rubik-Medium.ttf');
+}
+
+@font-face {
+  font-family: Rubik-SemiBold;
+  src: url('./assets/fonts/Rubik/Rubik-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: Rubik-Bold;
+  src: url('./assets/fonts/Rubik/Rubik-Bold.ttf');
+}
+
+@font-face {
+  font-family: Rubik-ExtraBold;
+  src: url('./assets/fonts/Rubik/Rubik-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: Rubik-Black;
+  src: url('./assets/fonts/Rubik/Rubik-Black.ttf');
+}
+
+
+
+
+
 @font-face {
   font-family:Font Awesome\ 5 Free;
   font-style:normal;
   font-weight:400;
   font-display:block;
   src:url(./assets/fonts/bootfonts/fa-regular-400.eot);
-  src:url(./assets/fonts/bootfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(./assets/fonts/bootfonts/fa-regular-400.woff2) format("woff2"),url(./assets/fonts/bootfonts/fa-regular-400.woff) format("woff"),url(./assets/fonts/bootfonts/fa-regular-400.ttf) format("truetype"),url(./assets/fonts/bootfonts/fa-regular-400.svg#fontawesome) format("svg")}.far{font-weight:400}
+  src:url(./assets/fonts/bootfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(./assets/fonts/bootfonts/fa-regular-400.woff2) format("woff2"),url(./assets/fonts/bootfonts/fa-regular-400.woff) format("woff"),url(./assets/fonts/bootfonts/fa-regular-400.ttf) format("truetype"),url(./assets/fonts/bootfonts/fa-regular-400.svg#fontawesome) format("svg")}.far{font-weight:400
+}
 
 *,
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Montserrat-Regular;
+  font-family: Rubik-Regular;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -62,28 +101,28 @@ body {
 }
 
 h1 {
-  font-family: Montserrat-ExtraBold;
+  font-family: Rubik-ExtraBold;
   font-size: 50px;
 }
 
 h2 {
-  font-family: Montserrat-Bold !important;
+  font-family: Rubik-Bold !important;
   font-size: 32px !important;
 }
 
 h3 {
-  font-family: Montserrat-SemiBold !important;
+  font-family: Rubik-SemiBold !important;
   font-size: 27px !important;
 }
 
 h5 {
-  font-family: Montserrat-Bold !important;
+  font-family: Rubik-Bold !important;
   font-size: 17px !important;
 }
 
 .btn {
   outline: none;
-  font-family: Montserrat-Bold;
+  font-family: Rubik-Bold;
   font-size: 15px;
   text-transform: uppercase;
   transition: 0.3s;

@@ -61,7 +61,7 @@
 .tablets .content h1 {
   font-size: 30px;
   margin-bottom: 27px;
-  font-family: Montserrat-Bold;
+  font-family: Rubik-Bold;
 }
 
 .tablets .content p {
@@ -76,7 +76,7 @@
 .card .btn {
   /* margin: 47px 15px 0; */
   outline: none;
-  font-family: Montserrat-Bold;
+  font-family: Rubik-Bold;
   margin-right: 55px;
   font-size: 17px;
   text-transform: uppercase;
