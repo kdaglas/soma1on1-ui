@@ -10,12 +10,21 @@ class Login extends React.Component {
     info: '',
   }
 
+  onPressLogin = async (event) => {
+    event.preventDefault();
+    window.location.href = "/dashboard";
+  }
+
   onChangeUsername = (event: any) => {
     this.setState({ username: event.target.value });
   }
 
   onChangePassword = (event: any) => {
     this.setState({ password: event.target.value });
+  }
+
+  onClickLog = () => {
+    window.location.href = "/dashboard";
   }
 
   // showPassword = () => {
@@ -54,7 +63,9 @@ class Login extends React.Component {
             <div className="videobg">
               <h3 className="login-card-description">Login to soma1on1</h3>
               {this.state.info}
-              <form className="login-form">
+
+              
+              <form className="login-form" method="post" onSubmit={this.onPressLogin}>
                 <p className="form-title">Account</p>
 
                 <div className="form-group input-group">
@@ -97,10 +108,8 @@ class Login extends React.Component {
                   <a href="/notfound" className="text-reset text-link">Forgot password?</a>
                 </div>
 
-                <button className="btn btn-sized btn-bg ripple btn-block login-btn">
-                  <a href="/dashboard">
+                <button className="btn btn-sized btn-bg ripple btn-block login-btn" onClick={this.onClickLog}>
                     Sign In
-                  </a>
                 </button>
 
               </form>

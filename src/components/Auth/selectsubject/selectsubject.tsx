@@ -8,97 +8,105 @@ import './banner.css';
 import './selectsubject.css';
 import './multiselect.css';
 
-const SelectedSubjects = () => (
-  <div className="selectsubject">
-    <div className="nilesafarivideo">
-      <img className="videobg" src={rightsider} alt="" />
-    </div>
+function SelectedSubjects() {
 
-    <div className="leftsider">
-      <div className="selectcontent">
-        <div className="selectsubjectcontent">
-          <h3 className="select-subject-title">Complete Signing Up to soma1on1</h3>
-          <p className="select-subject-description">Your first step to quicker and closer education,</p>
-          <form className="select-subject-form">
-            <div className="resident-forms">
-              <div className="residence">
-                <p className="form-title">Residence</p>
-                <div className="form-group input-group">
-                  <div className="input-group-prepend">
-                    <span className="input-group-text border-right-0" id="basic-addon1">
-                      <img src={email} alt="email" className="login-form-icon" />
-                    </span>
+  const onPressSignup = async (event) => {
+    event.preventDefault();
+    window.location.href = "/dashboard";
+  };
+
+  return (
+    <div className="selectsubject">
+      <div className="nilesafarivideo">
+        <img className="videobg" src={rightsider} alt="" />
+      </div>
+
+      <div className="leftsider">
+        <div className="selectcontent">
+          <div className="selectsubjectcontent">
+            <h3 className="select-subject-title">Complete Signing Up to soma1on1</h3>
+            <p className="select-subject-description">Your first step to quicker and closer education,</p>
+
+
+            <form className="select-subject-form" method="post" onSubmit={onPressSignup}>
+              <div className="resident-forms">
+                <div className="residence">
+                  <p className="form-title">Residence</p>
+                  <div className="form-group input-group">
+                    <div className="input-group-prepend">
+                      <span className="input-group-text border-right-0" id="basic-addon1">
+                        <img src={email} alt="email" className="login-form-icon" />
+                      </span>
+                    </div>
+                    <input
+                      type="text"
+                      name="residence"
+                      id="residence"
+                      className="form-control border-left-0"
+                      placeholder="Location"
+                    />
                   </div>
-                  <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    className="form-control border-left-0"
-                    placeholder="Location"
-                  />
+                </div>
+                <div className="study">
+                  <p className="form-title">Study Level</p>
+                  <div className="form-group input-group">
+                    <input
+                      type="text"
+                      name="level"
+                      id="level"
+                      className="form-control border-right-0"
+                      placeholder="Study level"
+                    />
+                    <div className="input-group-prepend">
+                      <span className="input-group-text border-left-0" id="basic-addon1">
+                        <img src={password} alt="email" className="login-form-icon" />
+                      </span>
+                    </div>
+
+                  </div>
                 </div>
               </div>
-              <div className="study">
-                <p className="form-title">Study Level</p>
-                <div className="form-group input-group">
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    className="form-control border-right-0"
-                    placeholder="Study level"
-                  />
-                  <div className="input-group-prepend">
-                    <span className="input-group-text border-left-0" id="basic-addon1">
-                      <img src={password} alt="email" className="login-form-icon" />
-                    </span>
-                  </div>
-
+              <p className="form-title mt-2">Required Subjects</p>
+              <div className="form-group input-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text border-right-0" id="basic-addon1">
+                    <img src={password} alt="email" className="login-form-icon" />
+                  </span>
                 </div>
+                <input
+                  type="text"
+                  name="subjects"
+                  id="password"
+                  className="form-control border-left-0"
+                  placeholder="Password"
+                />
               </div>
-            </div>
-            <p className="form-title mt-2">Required Subjects</p>
-            <div className="form-group input-group">
-              <div className="input-group-prepend">
-                <span className="input-group-text border-right-0" id="basic-addon1">
-                  <img src={password} alt="email" className="login-form-icon" />
-                </span>
-              </div>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                className="form-control border-left-0"
-                placeholder="Password"
+              <DropdownMultiselect
+                className="form-control btn-sized"
+                options={
+                  [
+                    'Mathematics',
+                    'Physics',
+                    'Science',
+                    'Chemistry',
+                    'French',
+                    'France',
+                  ]
+                }
+                name="subjects"
+                placeholder="Select your subjects"
               />
-            </div>
-            <DropdownMultiselect
-              className="form-control btn-sized"
-              options={
-                                [
-                                  'Mathematics',
-                                  'Physics',
-                                  'Science',
-                                  'Chemistry',
-                                  'French',
-                                  'France',
-                                ]
-                            }
-              name="subjects"
-              placeholder="Select your subjects"
-            />
 
-            <button className="btn btn-sized btn-bg ripple btn-block login-btn mt-4">
-              <a href="/dashboard">
-                Sign In
-              </a>
+              <button className="btn btn-sized btn-bg ripple btn-block login-btn mt-4">
+                Sign Up
             </button>
 
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default SelectedSubjects;

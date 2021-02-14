@@ -100,6 +100,11 @@ body {
   background-size: cover;
 }
 
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
 h1 {
   font-family: Rubik-ExtraBold;
   font-size: 50px;

@@ -48,6 +48,10 @@ class Header extends React.Component {
     });
   }
 
+  onClickStart = () => {
+    window.location.href = "/signup"
+  }
+
   handleScroll = () => {
     const scrollPosition = window.pageYOffset;
     if (scrollPosition > 775) {
@@ -78,7 +82,7 @@ class Header extends React.Component {
           <div className="auth-section">
             <Link to="/login"><p className="login-txt">login</p></Link>
 
-            <a href="/signup"><button className="btn btn-sized btn-bg auth-btn">start now</button></a>
+            <button className="btn btn-sized btn-bg auth-btn" onClick={this.onClickStart}>start now</button>
 
             <div className="menu" onClick={this.openNavBar} onKeyDown={this.openNavBar}>
               <div className="bar half start" />
