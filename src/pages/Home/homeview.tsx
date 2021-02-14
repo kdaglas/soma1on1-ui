@@ -19,7 +19,7 @@ function HomeView() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 12000)
+    }, 7000)
   }, [])
 
   return (
