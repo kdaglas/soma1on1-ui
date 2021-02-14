@@ -1,4 +1,4 @@
-// {
+{
 //   "env": {
 //     "browser": true,
 //     "es6": true
@@ -62,4 +62,4 @@
 //     "jsx-ally/no-static-element-interactions": "off",
 //     "react/button-has-type": "off"
 //   }
-// }
+}

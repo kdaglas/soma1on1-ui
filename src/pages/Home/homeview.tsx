@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Banner from '../../components/Home/banner/banner';
 import Header from '../../shared/header/Header';
 // import Description from '../../components/Home/description/description';
@@ -11,25 +11,34 @@ import Loader from '../../components/Home/loader/loader';
 // import Testimony from '../../components/Home/testimonials/testimonials';
 // import Contacts from '../../shared/contact/contact';
 
-const HomeView = () => (
-  <div>
-    <Loader />
-    <Header />
-    <Banner />
-    {/* <Description /> */}
-    <Card />
-    <Tabs />
-    <Join />
-    <Pictorial />
-    {/* <Testimony /> */}
-    {/* <Contacts /> */}
-    <Footer />
-    {/* <Footer />
-    <Footer />
-    <Footer />
-    <Footer />
-    <Footer /> */}
-  </div>
-);
+function HomeView() {
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, [])
+
+  return (
+  <>
+    {loading ? (<Loader />) : (
+      <>
+        <Header />
+        <Banner />
+        <Card />
+        <Tabs />
+        <Join />
+        <Pictorial />
+        {/* <Testimony /> */}
+        {/* <Contacts /> */}
+        <Footer />
+      </>
+    )}
+  </>
+  )
+};
 
 export default HomeView;
