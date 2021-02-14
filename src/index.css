@@ -127,12 +127,17 @@ h5 {
   text-transform: uppercase;
   transition: 0.3s;
   border-radius: 5px !important;
-  height: 55px;
-  width: 170px;
+  /* height: 55px;
+  width: 170px; */
   margin: 0;
   display: flex;
   align-items: center !important;
   justify-content: center !important;
+}
+
+.btn-sized {
+  height: 55px;
+  width: 170px;
 }
 
 .btn-bg {

@@ -23,7 +23,7 @@ const Card = () => (
         </p>
       </div>
 
-      <button className="btn btn-no-bg-white">about us</button>
+      <button className="btn btn-sized btn-no-bg-white">about us</button>
     </div>
   </div>
 );

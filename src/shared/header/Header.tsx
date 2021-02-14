@@ -45,7 +45,7 @@ class Header extends React.Component {
         },
         showNav: true,
       });
-    })
+    });
   }
 
   handleScroll = () => {
@@ -78,7 +78,7 @@ class Header extends React.Component {
           <div className="auth-section">
             <Link to="/login"><p className="login-txt">login</p></Link>
 
-            <a href="/signup"><button className="btn btn-bg auth-btn">start now</button></a>
+            <a href="/signup"><button className="btn btn-sized btn-bg auth-btn">start now</button></a>
 
             <div className="menu" onClick={this.openNavBar} onKeyDown={this.openNavBar}>
               <div className="bar half start" />

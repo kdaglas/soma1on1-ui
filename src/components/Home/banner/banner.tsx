@@ -21,8 +21,8 @@ const Banner = () => (
           </p>
 
           <div className="btn-section">
-            <button className="btn btn-bg">pricing</button>
-            <a href="/signup"><button className="btn btn-no-bg">start now</button></a>
+            <button className="btn btn-sized btn-bg">pricing</button>
+            <a href="/signup"><button className="btn btn-sized btn-no-bg">start now</button></a>
           </div>
         </div>
       </div>

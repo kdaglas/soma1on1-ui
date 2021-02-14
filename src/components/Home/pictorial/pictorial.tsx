@@ -27,7 +27,7 @@ const Pictorial = () => (
           and earn success on the application.
         </p>
 
-        <button className="btn btn-bg">start now</button>
+        <button className="btn btn-sized btn-bg">start now</button>
       </div>
 
       <div className="picbg">

@@ -1,18 +1,17 @@
 import React from 'react';
 
-import logo from '../../assets/images/logos/normal-logo.svg';
+// import logo from '../../assets/images/logos/normal-logo.svg';
 
 import crown from '../../assets/img/crown.svg';
 // import dash from '../../assets/img/dash.svg';
 import handshake from '../../assets/img/hand-shake.svg';
 import mic from '../../assets/img/mic.svg';
 
-import avatar from '../../assets/img/avatars/avatar.jpg';
+// import avatar from '../../assets/img/avatars/avatar.jpg';
 import avatar2 from '../../assets/img/avatars/avatar-2.jpg';
 import avatar3 from '../../assets/img/avatars/avatar-3.jpg';
 import avatar4 from '../../assets/img/avatars/avatar-4.jpg';
 import avatar5 from '../../assets/img/avatars/avatar-5.jpg';
-
 
 import jed1 from '../../assets/img/avatars/jed1.svg';
 import jed2 from '../../assets/img/avatars/jed2.svg';
@@ -29,12 +28,13 @@ import lesson2 from '../../assets/img/photos/lesson2.svg';
 import lesson3 from '../../assets/img/photos/lesson3.svg';
 
 import piechart from '../../assets/img/pie-chart.svg';
-import calendar from '../../assets/img/calendar.svg';
+// import calendar from '../../assets/img/calendar.svg';
 
 import '../../assets/css/app.css';
 import SideNav from '../../shared/sidenav/sidenav';
 import TopNav from '../../shared/topNav/topNav';
 import Footer from '../../shared/dashfooter/footer';
+import Calendar from '../../shared/calendar/calendar';
 
 const TutorDashboard = () => (
 
@@ -597,22 +597,7 @@ const TutorDashboard = () => (
               </div>
             </div>
 
-            <div className="col-12 col-md-6 col-xl-3 col-xxl-4 d-flex order-1 order-xxl-1">
-              <div className="card flex-fill">
-                <div className="card-header">
-
-                  <h5 className="card-title c-title mt-2 mb-0">Calendar</h5>
-                </div>
-                <div className="card-body d-flex">
-                  <div className="align-self-center w-100">
-                    <div className="chart">
-                      {/* <div id="datetimepicker-dashboard" /> */}
-                      <img src={calendar} className="w-100" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Calendar />
           </div>
 
         </div>

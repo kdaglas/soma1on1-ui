@@ -25,7 +25,7 @@ const Join = () => (
         </p>
       </div>
 
-      <button className="btn btn-no-bg-white">join us</button>
+      <button className="btn btn-sized btn-no-bg-white">join us</button>
     </div>
   </div>
 );

@@ -15,9 +15,9 @@ const Routes = () => (
       <Route path="/dashboard" exact component={TutorDashboardView} />
       <Route path="/login" exact component={LoginView} />
       <Route path="/signup" exact component={SignUpView} />
-      <Route path="/select-subject" exact component={ SelectSubjectView } />
-      <Route path="/profile" exact component={ ProfileView } />
-      <Route path="/notfound" exact component={ Notfoundpage } />
+      <Route path="/select-subject" exact component={SelectSubjectView} />
+      <Route path="/profile" exact component={ProfileView} />
+      <Route path="/notfound" exact component={Notfoundpage} />
     </Switch>
   </Router>
 );

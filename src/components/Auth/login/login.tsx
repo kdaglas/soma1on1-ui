@@ -1,11 +1,8 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
-// import rightsider from '../../assets/images/splash/login-bg.svg';
 import email from '../../../assets/icons/email.svg';
 import password from '../../../assets/icons/password.svg';
 import logo from '../../../assets/images/logos/normal-logo.svg';
-import './banner.css';
 import './login.css';
 
 class Login extends React.Component {
@@ -63,7 +60,7 @@ class Login extends React.Component {
                 <div className="form-group input-group">
                   <div className="input-group-prepend">
                     <span className="input-group-text border-right-0" id="basic-addon1">
-                      <img src={email} alt='email' className="login-form-icon" />
+                      <img src={email} alt="email" className="login-form-icon" />
                     </span>
                   </div>
                   <input
@@ -79,7 +76,7 @@ class Login extends React.Component {
                 <div className="form-group input-group">
                   <div className="input-group-prepend">
                     <span className="input-group-text border-right-0" id="basic-addon1">
-                      <img src={password} alt='email' className="login-form-icon" />
+                      <img src={password} alt="email" className="login-form-icon" />
                     </span>
                   </div>
                   <input
@@ -100,13 +97,12 @@ class Login extends React.Component {
                   <a href="/notfound" className="text-reset text-link">Forgot password?</a>
                 </div>
 
-                
-                  <button className="btn btn-bg ripple btn-block login-btn">
+                <button className="btn btn-sized btn-bg ripple btn-block login-btn">
                   <a href="/dashboard">
                     Sign In
-                    </a>
-                  </button>
-                
+                  </a>
+                </button>
+
               </form>
 
               <p className="login-card-footer-text">
