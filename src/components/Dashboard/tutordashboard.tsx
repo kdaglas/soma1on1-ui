@@ -30,7 +30,7 @@ import lesson3 from '../../assets/img/photos/lesson3.svg';
 import piechart from '../../assets/img/pie-chart.svg';
 // import calendar from '../../assets/img/calendar.svg';
 
-import '../../assets/css/app.css';
+import './app.css';
 import SideNav from '../../shared/sidenav/sidenav';
 import TopNav from '../../shared/topNav/topNav';
 import Footer from '../../shared/dashfooter/footer';

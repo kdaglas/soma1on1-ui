@@ -70,7 +70,7 @@ const Notfoundpage = () => {
       <img src={logo} alt="not-found" />
       <h1>404</h1>
       <p>This page might be under contruction or is not available but please keep calm and thanks for trying to access it</p>
-      <button onClick={() => history.goBack()} className="btn btn-bg btn-not-found">Go back</button>
+      <button onClick={() => history.goBack()} className="btn btn-bg btn-not-found btn-sized">Go back</button>
     </Container>
   );
 };

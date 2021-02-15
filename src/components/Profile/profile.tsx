@@ -32,7 +32,7 @@ import avatar5 from '../../assets/img/avatars/avatar-5.jpg';
 // import piechart from '../../assets/img/pie-chart.svg';
 // import calendar from '../../assets/img/calendar.svg';
 
-import '../../assets/css/app.css';
+import '../Dashboard/app.css';
 
 const TutorProfile = () => (
 
