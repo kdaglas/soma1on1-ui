@@ -1,0 +1,22 @@
+# dependencies
+/node_modules/**
+
+# testing
+/coverage/**
+/nyc_output/**
+
+# production
+/dist/**
+
+#misc
+/Procfile
+
+/src/assets/css/**
+/src/assets/fonts/**
+/src/assets/icons/**
+/src/assets/images/**
+/src/assets/img/**
+/src/assets/scss/**
+
+# css files
+.css

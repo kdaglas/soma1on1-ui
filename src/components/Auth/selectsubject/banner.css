@@ -1,0 +1,161 @@
+.selectsubject {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.selectsubject .nilesafarivideo {
+  /* position: relative; */
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  /* height: 100%; */
+  /* background-attachment: scroll;
+  overflow: hidden; */
+  width: 50%;
+  /* border: 1px solid red; */
+}
+
+.selectsubject .nilesafarivideo .videobg {
+  /* background-size: cover; */
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid blue; */
+  object-fit: cover;
+  /* border: 1px solid blue; */
+  /* overflow: hidden; */
+  /* margin-right: -200px; */
+  /* pointer-events: none; */
+}
+
+.selectsubject .leftsider {
+  width: 50%;
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+
+.selectsubject .leftsider .selectcontent {
+  /* position: absolute; */
+  /* margin-right: 70px; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* left: 0;
+  right: 100; */
+  
+  width: 100% !important;
+  /* border: 1px solid green; */
+  /* float: right; */
+}
+
+.selectsubject .leftsider .selectcontent .selectsubjectcontent {
+  width: 65% !important;
+  /* border: 1px solid red; */
+  /* text-align: center; */
+  /* float: right; */
+  /* margin: 0 !important; */
+  margin: 0 auto !important;
+  /* margin-right: 40px; */
+}
+
+.selectsubject .leftsider .selectcontent .selectsubjectcontent h3 {
+  margin: 0 0 15px;
+  font-size: 25px;
+}
+
+.selectsubject .leftsider .selectcontent .selectsubjectcontent .select-subject-description {
+  color: #A2A3B3;
+  font-size: 15px;
+  margin-bottom: 37px;
+}
+
+.selectsubject .leftsider .selectcontent .btn-section {
+  margin: 47px auto 0;
+}
+
+.selectsubject .leftsider .selectcontent .btn-section .btn {
+  margin: 0 15px 0;
+  /* outline: none;
+  font-family: Montserrat-Bold;
+  font-size: 15px; */
+  /* text-transform: uppercase; */
+  border: 2px solid #E23744;
+  /* height: 55px;
+  width: 170px;
+  transition: 0.3s; */
+  /* border-radius: 5px; */
+  /* outline: none; */
+}
+
+.selectsubject .leftsider .selectcontent .selectsubjectcontent .select-subject-form .resident-forms {
+  display: flex;
+}
+
+.selectsubject .leftsider .selectcontent .btn-section .btn-bg-1 {
+  background: #E23744;
+  color: #fff;
+}
+
+.selectsubject .leftsider .selectcontent .btn-section .btn-bg-2 {
+  background: transparent;
+  color: #E23744;
+}
+
+.selectsubject .leftsider .selectcontent .btn-section .btn:hover {
+  background: #E23744;
+  /* transition: 0.3s; */
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .selectsubject .nilesafarivideo {
+    display: none;
+  }
+  
+  .selectsubject .leftsider {
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: end; */
+    /* align-items: center; */
+  }
+
+  .selectsubject .leftsider .selectcontent {
+    /* position: absolute; */
+    margin: auto;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* left: 0;
+    right: 100; */
+    /* text-align: center; */
+    /* margin: auto 0; */
+    width: 85%;
+    /* border: 1px solid red; */
+    /* float: right; */
+  }
+
+  .selectsubject .leftsider .selectcontent h1 {
+    font-size: 37px;
+    margin: 0 auto 35px;
+  }
+  
+  .selectsubject .leftsider .selectcontent p {
+    font-size: 17px;
+  }
+  
+  .selectsubject .leftsider .selectcontent .btn-section {
+    margin: 35px auto 0;
+  }
+
+  .selectsubject .leftsider .selectcontent .btn-section .btn {
+    height: 50px;
+  }
+
+  .selectsubject .leftsider .selectcontent .btn-section .btn-bg-2 {
+    margin: 17px 0 0;
+  }
+}

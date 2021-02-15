@@ -1,8 +1,4 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
-@font-face {
+/* @font-face {
   font-family: Montserrat-Regular; 
   src: url('./assets/fonts/Montserrat/Montserrat-Regular.ttf');
 }
@@ -30,64 +26,203 @@
 @font-face {
   font-family: Montserrat-Black;
   src: url('./assets/fonts/Montserrat/Montserrat-Black.ttf');
+} */
+
+
+
+
+
+@font-face {
+  font-family: Rubik-Regular; 
+  src: url('./assets/fonts/Rubik/Rubik-Regular.ttf');
 }
+
+@font-face {
+  font-family: Rubik-Medium;
+  src: url('./assets/fonts/Rubik/Rubik-Medium.ttf');
+}
+
+@font-face {
+  font-family: Rubik-SemiBold;
+  src: url('./assets/fonts/Rubik/Rubik-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: Rubik-Bold;
+  src: url('./assets/fonts/Rubik/Rubik-Bold.ttf');
+}
+
+@font-face {
+  font-family: Rubik-ExtraBold;
+  src: url('./assets/fonts/Rubik/Rubik-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: Rubik-Black;
+  src: url('./assets/fonts/Rubik/Rubik-Black.ttf');
+}
+
+
+
+
+
+/* @font-face {
+  font-family:Font Awesome\ 5 Free;
+  font-style:normal;
+  font-weight:400;
+  font-display:block;
+  src:url(./assets/fonts/bootfonts/fa-regular-400.eot);
+  src:url(./assets/fonts/bootfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(./assets/fonts/bootfonts/fa-regular-400.woff2) format("woff2"),url(./assets/fonts/bootfonts/fa-regular-400.woff) format("woff"),url(./assets/fonts/bootfonts/fa-regular-400.ttf) format("truetype"),url(./assets/fonts/bootfonts/fa-regular-400.svg#fontawesome) format("svg")}.far{font-weight:400
+} */
 
 *,
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Montserrat-Regular;
+  font-family: Rubik-Regular;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-color: #fff !important;
+}
+
+.bg-main {
+  background: #E23744;
+}
+
+.notfoundbg {
+  background-image: url("./assets/images/splash/login-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
 h1 {
-  font-family: Montserrat-ExtraBold;
+  font-family: Rubik-ExtraBold;
   font-size: 50px;
 }
 
 h2 {
-  font-family: Montserrat-Bold;
-  font-size: 32px;
+  font-family: Rubik-Bold !important;
+  font-size: 32px !important;
 }
 
 h3 {
-  font-family: Montserrat-SemiBold;
-  font-size: 27px;
+  font-family: Rubik-SemiBold !important;
+  font-size: 27px !important;
 }
 
 h5 {
-  font-family: Montserrat-Bold;
-  font-size: 19px;
-  margin-bottom: 27px;
-  color: #E23744;
+  font-family: Rubik-Bold !important;
+  font-size: 17px !important;
 }
 
-/* h1, h2, h3, h4, h5 { */
-  /* margin: 0;
-  padding: 0;
-  font-family: Montserrat-ExtraBold; */
-  /* font-weight: normal; */
-  /* font-weight: 900; */
-/* } */
-
-/* h2 {
-  font-size: 27px;
+.btn {
+  outline: none;
+  font-family: Rubik-Bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-radius: 5px !important;
+  /* height: 55px;
+  width: 170px; */
+  margin: 0;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-h3 {
-  font-size: 23px;
-} */
+.btn-sized {
+  height: 55px;
+  width: 170px;
+}
+
+.btn-bg {
+  background-color: #E23744 !important;
+  color: #fff !important;
+  border: 2px solid #E23744 !important;
+}
+
+.btn-bg:hover {
+  background-color: transparent !important;
+  color: #E23744 !important;
+  transition: 0.3s;
+  border: 2px solid #E23744 !important;
+}
+
+.btn-no-bg {
+  background-color: transparent;
+  color: #E23744 !important;
+  border: 2px solid #E23744 !important;
+}
+
+.btn-no-bg:hover {
+  background-color: #E23744;
+  transition: 0.3s;
+  color: #fff !important;
+}
+
+.btn-no-bg-white {
+  background-color: transparent;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+.btn-no-bg-white:hover {
+  background-color: #fff;
+  color: #E23744 !important;
+  border: 2px solid #fff !important;
+}
+
+/* CSS FOR THE FORM 
+--------------------------------------- */
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.ripple {
+	position: relative;
+	overflow: hidden;
+	transform: translate3d(0, 0, 0);
+	cursor:pointer;
+}
+.ripple:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	transform: scale(10, 10);
+	opacity: 0;
+	transition: transform .5s, opacity 1s
+}
+.ripple:active:after {
+	transform: scale(0, 0);
+	opacity: .2;
+	transition: 0s;
+}
 
 p,
 span {
-  /* margin: 0;
-  padding: 0; */
-  font-size: 17px;
-  /* line-height: 1.37; */
-  /* font-weight: bold; */
+  font-size: 15px;
 }
 
 .custom-elevation-z2 {
